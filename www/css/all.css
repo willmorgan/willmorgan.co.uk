@@ -122,3 +122,16 @@ img {
 .team > li a {
 	color: #fff;
 }
+
+.portfolio--greggs {
+	background: #8a5738 url(../img/greggs/layout-stripe.jpg) repeat-x 50% 0;
+}
+
+.portfolio--ac {
+	background: #291912 url(../img/ac/layout-stripe.jpg) repeat-x 50% 0;
+}
+
+.portfolio--lbf {
+	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 0 0;
+	color: #444444;
+}
