@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-	font: 300 1.8em "Oswald", sans-serif;
+	font: 300 1.8em/1.4em "Oswald", sans-serif;
 }
 
 h1 a,
@@ -35,17 +35,26 @@ h6 a:hover {
 	border-bottom: 1px solid;
 }
 
+h6 {
+	margin: 0 0 .5em;
+	font-size: 1.4em;
+}
+
 img {
 	max-width: 100%;
 }
 
+ul {
+	list-style-position: inside;
+	padding-left: 0;
+}
+
 .ui-panel {
-	height: 100vh;
+	min-height: 100vh;
 	overflow: hidden;
 	line-height: 100vh;
 	text-align: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding: 10vh 0;
 	box-sizing: content-box;
 }
 
@@ -59,6 +68,17 @@ img {
 	text-align: center;
 }
 
+@media screen and (min-device-width: 1024px) {
+	.ui-panel {
+		padding: 5vh 0;
+	}
+
+	.ui-panel--content {
+		font-size: 3.5vmin;
+	}
+}
+
+
 .ui-panel--content > h1:first-child,
 .ui-panel--content > h2:first-child,
 .ui-panel--content > h3:first-child
@@ -69,6 +89,12 @@ img {
 .about .not-a-selfie {
 	width: 50%;
 	border-radius: 50%;
+}
+
+@media screen and (min-device-width: 1024px) {
+	.about .not-a-selfie {
+		width: 40%;
+	}
 }
 
 .ui-shadow {
@@ -114,11 +140,6 @@ img {
 	margin: 1em 0;
 }
 
-.team > li h6 {
-	margin: 0 0 .5em;
-	font-size: 1.4em;
-}
-
 .team > li a {
 	color: #fff;
 }
@@ -134,4 +155,46 @@ img {
 .portfolio--lbf {
 	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 0 0;
 	color: #444444;
+}
+
+.technologies {
+	text-align: center;
+	list-style: none;
+}
+
+.technologies li {
+	display: inline-block;
+}
+
+.roles ~ h6,
+.roles ~ ul {
+	display: none;
+}
+
+.roles .thumb {
+	display: block;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+figcaption {
+	font-size: .5em;
+	line-height: 1;
+}
+
+.cta {
+	display: block;
+	padding: .6em;
+	width: 90%;
+	margin: 2em auto;
+	background: #fff;
+	color: #333;
+	text-decoration: none;
+	border-radius: 2em;
+}
+
+.thumb:after {
+	content: attr(alt);
 }
