@@ -14,6 +14,7 @@ h4,
 h5,
 h6 {
 	font: 300 1.8em/1.4em "Oswald", sans-serif;
+	margin-top: 0;
 }
 
 h1 a,
@@ -94,7 +95,7 @@ figcaption {
 	}
 
 	.ui-panel--content {
-		font-size: 3.5vmin;
+		font-size: 3vmin;
 	}
 }
 
@@ -113,7 +114,7 @@ figcaption {
 
 @media screen and (min-device-width: 1024px) {
 	.about .not-a-selfie {
-		width: 40%;
+		width: 25%;
 	}
 }
 
@@ -130,6 +131,7 @@ figcaption {
 	background: url(../img/colourful-building-credit-alex-ellison.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	background-attachment: fixed;
+	padding-top: 0;
 }
 
 .about--skills {
@@ -171,6 +173,10 @@ figcaption {
 
 .team > li a {
 	color: #fff;
+}
+
+.portfolio .ui-panel--content {
+	padding-top: 10vh;
 }
 
 .portfolio--greggs {
