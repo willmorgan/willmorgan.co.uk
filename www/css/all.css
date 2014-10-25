@@ -201,17 +201,27 @@ figcaption {
 	display: inline-block;
 }
 
-.roles ~ h6,
-.roles ~ ul {
+.roles ~ section {
 	display: none;
 }
 
 @media screen and (min-device-width: 1024px) {
-	.roles ~ h6,
-	.roles ~ ul {
+	.roles ~ section {
 		display: block;
 	}
 	.ui-panel--content .thumb {
 		display: none;
 	}
+
+	.portfolio__info {
+		font-size: .6em;
+		line-height: 1.75em;
+		float: left;
+		width: 33.33%;
+	}
+
+	.portfolio__info h6 {
+		text-align: center;
+	}
+
 }
