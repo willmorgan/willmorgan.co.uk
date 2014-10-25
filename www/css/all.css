@@ -201,12 +201,14 @@ figcaption {
 	display: inline-block;
 }
 
-.roles ~ section {
+.roles ~ .portfolio__info,
+.portfolio__screens {
 	display: none;
 }
 
 @media screen and (min-device-width: 1024px) {
-	.roles ~ section {
+	.roles ~ .portfolio__info,
+	.portfolio__screens {
 		display: block;
 	}
 	.ui-panel--content .thumb {
@@ -222,6 +224,34 @@ figcaption {
 
 	.portfolio__info h6 {
 		text-align: center;
+	}
+
+	.portfolio__screens:before {
+		clear: both;
+		content: "";
+		display: block;
+	}
+
+	.portfolio__screens {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		/* You can set flex-wrap and flex-direction individually */
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* Or do it all in one line with flex flow */
+		flex-flow: row wrap;
+		/* tweak the where items line up on the row */
+		/* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+		align-content: flex-end;
+	}
+
+	.portfolio__screens > figure {
+		width: 33.3%;
+		padding: .25em;
+		transition: flex-grow .25s linear;
 	}
 
 }
