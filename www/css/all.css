@@ -3,8 +3,12 @@
 }
 
 body {
-	background: #333;
-	color: #efefef;
+	background: #161629;
+	color: #ddddf2;
+}
+
+a {
+	color: #fff;
 }
 
 h1,
@@ -13,6 +17,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: #fff;
 	font: 300 1.8em/1.4em "Oswald", sans-serif;
 	margin-top: 0;
 }
@@ -61,13 +66,34 @@ figcaption {
 
 .cta {
 	display: block;
-	padding: .6em;
+	position: relative;
+	padding: .6em 1.2em;
 	width: 90%;
-	margin: 2em auto;
-	background: #fff;
-	color: #333;
+	margin: 1em auto;
+	border: 1px solid #ddddf2;
+	color: #ddddf2;
 	text-decoration: none;
-	border-radius: 2em;
+	border-radius: .25em;
+	transition: all .1s linear;
+}
+
+	.cta:hover,
+	.cta:focus,
+	.cta:active {
+		color: #fff;
+		border-color: #fff;
+		background: #121218;
+	}
+
+	.cta:active {
+		top: 1px;
+	}
+
+@media screen and (min-device-width: 1024px) {
+	.cta {
+		display: inline-block;
+		width: auto;
+	}
 }
 
 .ui-panel {
@@ -181,6 +207,11 @@ figcaption {
 	color: #fff;
 }
 
+.portfolio,
+.others {
+	color: #efefef;
+}
+
 .portfolio .ui-panel--content {
 	padding-top: 10vh;
 }
@@ -195,7 +226,16 @@ figcaption {
 
 .portfolio--lbf {
 	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 0 0;
-	color: #444444;
+}
+
+.portfolio--lbf,
+.portfolio--lbf h1,
+.portfolio--lbf h2,
+.portfolio--lbf h3,
+.portfolio--lbf h4,
+.portfolio--lbf h5,
+.portfolio--lbf h6 {
+	color: #444;
 }
 
 .technologies {
