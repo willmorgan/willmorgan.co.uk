@@ -178,6 +178,18 @@ figcaption {
 	background-attachment: fixed;
 }
 
+.others--music {
+	background: url(../img/strobe.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.others--coffee {
+	background: url(../img/coffee-beans.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .team {
 	font-size: .8em;
 	line-height: 1.6em;
