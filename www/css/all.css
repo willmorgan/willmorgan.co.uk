@@ -207,12 +207,19 @@ figcaption {
 	margin: 1em 0;
 }
 
+.team__role {
+	display: none;
+}
+
 @media screen and (min-device-width: 1280px) {
 	.team > li {
 		width: 33%;
 	}
 	.team > li:nth-child(3n+1) {
 		clear: left;
+	}
+	.team__role {
+		display: block;
 	}
 }
 
