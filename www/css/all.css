@@ -142,6 +142,7 @@ figcaption {
 .about .not-a-selfie {
 	width: 50%;
 	border-radius: 50%;
+	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
 }
 
 @media screen and (min-device-width: 1024px) {
