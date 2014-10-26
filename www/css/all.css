@@ -89,6 +89,12 @@ figcaption {
 	text-align: center;
 }
 
+.ui-panel--divider {
+	min-height: 50vh;
+	line-height: 50vh;
+	padding: 0 0;
+}
+
 @media screen and (min-device-width: 1024px) {
 	.ui-panel {
 		padding: 5vh 0;
