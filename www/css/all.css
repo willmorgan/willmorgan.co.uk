@@ -4,7 +4,7 @@
 
 body {
 	background: #161629;
-	color: #ddddf2;
+	color: #efefef;
 }
 
 a {
@@ -266,9 +266,9 @@ use the entire page height to cover.
 	color: #fff;
 }
 
-.portfolio,
-.others {
-	color: #efefef;
+.hire,
+.closing {
+	color: #ddddf2;
 }
 
 .portfolio .ui-panel--content {
