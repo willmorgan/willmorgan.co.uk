@@ -60,7 +60,7 @@ figure {
 }
 
 figcaption {
-	font-size: .5em;
+	font-size: .8em;
 	line-height: 1;
 }
 
@@ -89,7 +89,7 @@ figcaption {
 		top: 1px;
 	}
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.cta {
 		display: inline-block;
 		width: auto;
@@ -107,7 +107,7 @@ figcaption {
 
 .ui-panel--content {
 	width: 80%;
-	font-size: 4vmin;
+	font-size: 1rem;
 	margin: 0 auto;
 	display: inline-block;
 	vertical-align: middle;
@@ -117,38 +117,31 @@ figcaption {
 
 .ui-panel--divider {
 	min-height: 50vh;
-	line-height: 50vh;
+	line-height: 100%;
 	padding: 0 0;
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.ui-panel {
-		padding: 5vh 0;
+		padding: 2.5em 0;
 	}
 
 	.ui-panel--content {
-		font-size: 3vmin;
+		font-size: 1.4rem;
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.ui-panel--content {
+		font-size: 1.6rem;
+	}
+}
 
 .ui-panel--content > h1:first-child,
 .ui-panel--content > h2:first-child,
 .ui-panel--content > h3:first-child
 {
-	font-size: 2em;
-}
-
-.about .not-a-selfie {
-	width: 50%;
-	border-radius: 50%;
-	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
-}
-
-@media screen and (min-device-width: 1024px) {
-	.about .not-a-selfie {
-		width: 25%;
-	}
+	font-size: 1.8em;
 }
 
 .ui-shadow {
@@ -176,6 +169,31 @@ figcaption {
 	.about--intro {
 		padding-top: 0;
 	}
+}
+
+.about .not-a-selfie {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	border-radius: 50%;
+	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
+}
+
+@media screen and (min-width: 768px) {
+	.about .not-a-selfie {
+		width: 33.3%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.about .not-a-selfie {
+		width: 20%;
+	}
+
+	figcaption {
+		font-size: .6em;
+	}
+
 }
 
 .about--skills {
@@ -250,7 +268,7 @@ use the entire page height to cover.
 	display: none;
 }
 
-@media screen and (min-device-width: 1280px) {
+@media screen and (min-width: 1280px) {
 	.team > li {
 		width: 33%;
 	}
@@ -272,7 +290,7 @@ use the entire page height to cover.
 }
 
 .portfolio .ui-panel--content {
-	padding-top: 10vh;
+	padding-top: 30%;
 }
 
 .portfolio--greggs {
@@ -311,7 +329,16 @@ use the entire page height to cover.
 	display: none;
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 768px) {
+
+	.portfolio .ui-panel--content {
+		padding-top: 10%;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+
 	.roles ~ .portfolio__info,
 	.portfolio__screens {
 		display: block;
@@ -346,8 +373,6 @@ use the entire page height to cover.
 		/* You can set flex-wrap and flex-direction individually */
 		flex-direction: row;
 		flex-wrap: wrap;
-		/* Or do it all in one line with flex flow */
-		flex-flow: row wrap;
 		/* tweak the where items line up on the row */
 		/* valid values are: flex-start, flex-end, space-between, space-around, stretch */
 		align-content: flex-end;
