@@ -160,35 +160,74 @@ figcaption {
 	padding: .2em .4em;
 }
 
-.about--intro {
-	background: url(../img/colourful-building-credit-alex-ellison.jpg) no-repeat 50% 50%;
+.ui-background-cover {
 	background-size: cover;
-	background-attachment: fixed;
-	padding-top: 0;
+	background-attachment: scroll;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.about--intro {
+	background-image: url(../img/1024-colourful-building-credit-alex-ellison.jpg);
+	padding-top: 5%;
+}
+
+@media screen and (min-width: 768px) {
+	.about--intro {
+		padding-top: 0;
+	}
 }
 
 .about--skills {
-	background: url(../img/blacksmith-axe-head-credit-rafael-hernandez.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-blacksmith-axe-head-credit-rafael-hernandez.jpg);
 }
 
 .portfolio--intro {
-	background: url(../img/city-at-dusk-credit-will-faichney.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-city-at-dusk-credit-will-faichney.jpg);
 }
 
 .others--music {
-	background: url(../img/strobe.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-strobe.jpg);
 }
 
 .others--coffee {
-	background: url(../img/coffee-beans.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-coffee-beans.jpg);
+}
+
+/**
+Switch on the nice scrolling effect for desktops.
+It's a bit iffy on mobiles - especially mobile Safari - because the backgrounds
+use the entire page height to cover.
+**/
+@media only screen and (min-device-width: 1280px) {
+
+	.ui-background-cover {
+		background-attachment: fixed;
+	}
+
+	/**
+	Can't wait for image-set / srcset support -_-
+	**/
+	.about--intro {
+		background-image: url(../img/colourful-building-credit-alex-ellison.jpg);
+	}
+
+	.about--skills {
+		background-image: url(../img/blacksmith-axe-head-credit-rafael-hernandez.jpg);
+	}
+
+	.portfolio--intro {
+		background-image: url(../img/city-at-dusk-credit-will-faichney.jpg);
+	}
+
+	.others--music {
+		background-image: url(../img/strobe.jpg);
+	}
+
+	.others--coffee {
+		background-image: url(../img/coffee-beans.jpg);
+	}
+
 }
 
 .team {
@@ -245,7 +284,7 @@ figcaption {
 }
 
 .portfolio--lbf {
-	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 0 0;
+	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 85% 0;
 }
 
 .portfolio--lbf,
