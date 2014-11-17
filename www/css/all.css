@@ -4,7 +4,7 @@
 
 body {
 	background: #161629;
-	color: #ddddf2;
+	color: #efefef;
 }
 
 a {
@@ -60,7 +60,7 @@ figure {
 }
 
 figcaption {
-	font-size: .5em;
+	font-size: .8em;
 	line-height: 1;
 }
 
@@ -89,7 +89,7 @@ figcaption {
 		top: 1px;
 	}
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.cta {
 		display: inline-block;
 		width: auto;
@@ -107,7 +107,7 @@ figcaption {
 
 .ui-panel--content {
 	width: 80%;
-	font-size: 4vmin;
+	font-size: 1rem;
 	margin: 0 auto;
 	display: inline-block;
 	vertical-align: middle;
@@ -117,38 +117,31 @@ figcaption {
 
 .ui-panel--divider {
 	min-height: 50vh;
-	line-height: 50vh;
+	line-height: 100%;
 	padding: 0 0;
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.ui-panel {
-		padding: 5vh 0;
+		padding: 2.5em 0;
 	}
 
 	.ui-panel--content {
-		font-size: 3vmin;
+		font-size: 1.4rem;
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.ui-panel--content {
+		font-size: 1.6rem;
+	}
+}
 
 .ui-panel--content > h1:first-child,
 .ui-panel--content > h2:first-child,
 .ui-panel--content > h3:first-child
 {
-	font-size: 2em;
-}
-
-.about .not-a-selfie {
-	width: 50%;
-	border-radius: 50%;
-	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
-}
-
-@media screen and (min-device-width: 1024px) {
-	.about .not-a-selfie {
-		width: 25%;
-	}
+	font-size: 1.8em;
 }
 
 .ui-shadow {
@@ -160,35 +153,99 @@ figcaption {
 	padding: .2em .4em;
 }
 
-.about--intro {
-	background: url(../img/colourful-building-credit-alex-ellison.jpg) no-repeat 50% 50%;
+.ui-background-cover {
 	background-size: cover;
-	background-attachment: fixed;
-	padding-top: 0;
+	background-attachment: scroll;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.about--intro {
+	background-image: url(../img/1024-colourful-building-credit-alex-ellison.jpg);
+	padding-top: 5%;
+}
+
+@media screen and (min-width: 768px) {
+	.about--intro {
+		padding-top: 0;
+	}
+}
+
+.about .not-a-selfie {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	border-radius: 50%;
+	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
+}
+
+@media screen and (min-width: 768px) {
+	.about .not-a-selfie {
+		width: 33.3%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.about .not-a-selfie {
+		width: 20%;
+	}
+
+	figcaption {
+		font-size: .6em;
+	}
+
 }
 
 .about--skills {
-	background: url(../img/blacksmith-axe-head-credit-rafael-hernandez.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-blacksmith-axe-head-credit-rafael-hernandez.jpg);
 }
 
 .portfolio--intro {
-	background: url(../img/city-at-dusk-credit-will-faichney.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-city-at-dusk-credit-will-faichney.jpg);
 }
 
 .others--music {
-	background: url(../img/strobe.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-strobe.jpg);
 }
 
 .others--coffee {
-	background: url(../img/coffee-beans.jpg) no-repeat 50% 50%;
-	background-size: cover;
-	background-attachment: fixed;
+	background-image: url(../img/1024-coffee-beans.jpg);
+}
+
+/**
+Switch on the nice scrolling effect for desktops.
+It's a bit iffy on mobiles - especially mobile Safari - because the backgrounds
+use the entire page height to cover.
+**/
+@media only screen and (min-device-width: 1280px) {
+
+	.ui-background-cover {
+		background-attachment: fixed;
+	}
+
+	/**
+	Can't wait for image-set / srcset support -_-
+	**/
+	.about--intro {
+		background-image: url(../img/colourful-building-credit-alex-ellison.jpg);
+	}
+
+	.about--skills {
+		background-image: url(../img/blacksmith-axe-head-credit-rafael-hernandez.jpg);
+	}
+
+	.portfolio--intro {
+		background-image: url(../img/city-at-dusk-credit-will-faichney.jpg);
+	}
+
+	.others--music {
+		background-image: url(../img/strobe.jpg);
+	}
+
+	.others--coffee {
+		background-image: url(../img/coffee-beans.jpg);
+	}
+
 }
 
 .team {
@@ -211,7 +268,7 @@ figcaption {
 	display: none;
 }
 
-@media screen and (min-device-width: 1280px) {
+@media screen and (min-width: 1280px) {
 	.team > li {
 		width: 33%;
 	}
@@ -227,13 +284,13 @@ figcaption {
 	color: #fff;
 }
 
-.portfolio,
-.others {
-	color: #efefef;
+.hire,
+.closing {
+	color: #ddddf2;
 }
 
 .portfolio .ui-panel--content {
-	padding-top: 10vh;
+	padding-top: 30%;
 }
 
 .portfolio--greggs {
@@ -245,7 +302,7 @@ figcaption {
 }
 
 .portfolio--lbf {
-	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 0 0;
+	background: #efefef url(../img/lbf/layout-stripe.jpg) repeat-x 85% 0;
 }
 
 .portfolio--lbf,
@@ -272,7 +329,16 @@ figcaption {
 	display: none;
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 768px) {
+
+	.portfolio .ui-panel--content {
+		padding-top: 10%;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+
 	.roles ~ .portfolio__info,
 	.portfolio__screens {
 		display: block;
@@ -307,8 +373,6 @@ figcaption {
 		/* You can set flex-wrap and flex-direction individually */
 		flex-direction: row;
 		flex-wrap: wrap;
-		/* Or do it all in one line with flex flow */
-		flex-flow: row wrap;
 		/* tweak the where items line up on the row */
 		/* valid values are: flex-start, flex-end, space-between, space-around, stretch */
 		align-content: flex-end;
