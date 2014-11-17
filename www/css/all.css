@@ -289,6 +289,11 @@ use the entire page height to cover.
 	color: #ddddf2;
 }
 
+.hire__cv {
+	margin-top: 4em;
+	font-size: .8em;
+}
+
 .portfolio .ui-panel--content {
 	padding-top: 30%;
 }
