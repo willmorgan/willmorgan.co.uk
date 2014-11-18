@@ -340,10 +340,6 @@ use the entire page height to cover.
 		padding-top: 10%;
 	}
 
-}
-
-@media screen and (min-width: 1280px) {
-
 	.roles ~ .portfolio__info,
 	.portfolio__screens {
 		display: block;
@@ -383,10 +379,72 @@ use the entire page height to cover.
 		align-content: flex-end;
 	}
 
-	.portfolio__screens > figure {
-		width: 33.3%;
+	.portfolio__screen {
+		display: block;
+		position: relative;
+		width: 33.33%;
 		padding: .25em;
 		transition: flex-grow .25s linear;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.portfolio__screen img {
+		display: block;
+		transition: all linear .2s;
+	}
+
+	.portfolio__screen:hover img,
+	.portfolio__screen:active img,
+	.portfolio__screen:focus img {
+		box-shadow: 0 0 10px rgba(0,0,0,.6);
+	}
+
+	.portfolio__screen figcaption {
+		margin-top: 1em;
+		font-size: .6em;
+	}
+
+}
+
+/**
+Excluding this rule for any resolution over 1024 because it's kind of fiddly
+**/
+@media screen and (max-width: 1024px) {
+
+	.portfolio__screens .ui-backdrop {
+		background: inherit;
+		padding: inherit;
+	}
+
+	.portfolio__screen:hover figcaption {
+		text-decoration: underline;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+	.portfolio__screens figcaption {
+		position: absolute;
+		top: 85%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		font-size: .8em;
+		font-weight: 700;
+		opacity: 0;
+		color: #fff;
+		transition: top ease-in-out .2s, opacity linear .15s;
+	}
+
+
+	.portfolio__screen:hover figcaption,
+	.portfolio__screen:active figcaption,
+	.portfolio__screen:focus figcaption {
+		opacity: 1;
+		top: 50%;
 	}
 
 }
