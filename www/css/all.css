@@ -330,6 +330,7 @@ use the entire page height to cover.
 }
 
 .roles ~ .portfolio__info,
+.portfolio__fullscreen,
 .portfolio__screens {
 	display: none;
 }
@@ -406,6 +407,7 @@ use the entire page height to cover.
 	}
 
 	.portfolio__fullscreen {
+		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
