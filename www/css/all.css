@@ -412,31 +412,116 @@ use the entire page height to cover.
 		right: 0;
 		bottom: 0;
 		z-index: 5000;
+		opacity: 0;
 		transition: all linear .25s;
 		pointer-events: none;
 		overflow: hidden;
 	}
 
 	.state-portfolio--fullscreen .portfolio__fullscreen {
+		opacity: 1;
 		background: rgba(0,0,0,.8);
 		pointer-events: all;
 	}
 
-	.portfolio__fullscreen > figure {
+	.portfolio__fullscreen > div {
 		position: absolute;
 		width: 100%;
-		max-width: 100vmin;
+		max-width: 90vmin;
 		top: -100%;
 		left: 50%;
 		opacity: 0;
 		transform: translate(-50%, -50%);
 		transition: top ease-in-out .5s, opacity linear .2s;
+		z-index: 2000;
 		margin: 0;
-}
+	}
 
-	.state-portfolio--fullscreen .portfolio__fullscreen > figure {
+	.state-portfolio--fullscreen .portfolio__fullscreen > div {
 		top: 50%;
 		opacity: 1;
+	}
+
+	.portfolio__nav-next,
+	.portfolio__nav-previous,
+	.portfolio__fullscreen__close {
+		position: absolute;
+		z-index: 3000;
+	}
+
+	.portfolio__nav-next,
+	.portfolio__nav-previous {
+		top: 20vh;
+		bottom: 20vh;
+		width: 5vw;
+		text-align: center;
+		transition: transform ease-in-out .5s;
+		text-indent: -9999em;
+		text-decoration: none;
+	}
+
+	.portfolio__nav-next {
+		right: 5vw;
+		transform: translate(100%, 0);
+	}
+
+	.portfolio__nav-next:after,
+	.portfolio__nav-previous:after {
+		display: block;
+		text-indent: 0;
+		line-height: 60vh;
+	}
+
+	.portfolio__nav-next:after {
+		content: ">";
+	}
+
+	.portfolio__nav-previous:after {
+		content: "<";
+	}
+
+	.portfolio__nav-previous {
+		left: 5vw;
+		transform: translate(-100%, 0);
+	}
+
+	.state-portfolio--fullscreen .portfolio__nav-next,
+	.state-portfolio--fullscreen .portfolio__nav-previous {
+		transform: translate(0, 0);
+	}
+
+	.portfolio__fullscreen-close {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		line-height: 1;
+		text-align: right;
+	}
+
+	.portfolio__fullscreen-close .t {
+		opacity: 0;
+		transition: all ease-in-out .35s;
+	}
+
+	.portfolio__fullscreen-close:hover .t {
+		padding-right: 1em;
+		opacity: 1;
+	}
+
+	.portfolio__fullscreen-close .x {
+		position: absolute;
+		font-size: 1.5em;
+		display: block;
+		top: .45em;
+		left: 50%;
+		opacity: 1;
+		margin-top: -.55em;
+		transition: all ease-in-out .35s;
+	}
+
+	.portfolio__fullscreen-close:hover .x {
+		left: -1.33ch;
+		transform: rotate(-360deg);
 	}
 
 }

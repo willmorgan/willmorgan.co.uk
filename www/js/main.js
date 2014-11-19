@@ -28,10 +28,9 @@
 				if(currentScope.matches(selector)) {
 					return currentScope;
 				}
-				currentScope = currentScope.parentNode;
 			}
 			while(
-				currentScope.parentNode && currentScope != document
+				(currentScope = currentScope.parentNode) && currentScope != document
 			);
 		},
 		/**
@@ -101,18 +100,22 @@
 		var figure = DOMTools.findOne('figure', currentNode);
 		var container = DOMTools.closest('.js-portfolio-container', currentNode);
 		var frame = DOMTools.findOne('.js-portfolio-fullscreen', container);
-		frame.innerHTML = figure.outerHTML;
-		frame.offsetHeight;
+		var target = DOMTools.findOne('.js-portfolio-fullscreen-target', frame);
+		target.innerHTML = figure.outerHTML;
+		target.offsetHeight;
 		container.classList.add('state-portfolio--fullscreen');
 	};
 	/**
 	 * Hide the portfolio item
 	 */
-	var hidePortfolioFullscreen = function(event, currentNode) {
-		var container = DOMTools.closest('.js-portfolio-container', currentNode);
+	var backgroundHide = function(event, currentNode) {
 		if(event.target != currentNode) {
 			return;
 		}
+		hidePortfolioFullscreen(event, currentNode);
+	};
+	var hidePortfolioFullscreen = function(event, currentNode) {
+		var container = DOMTools.closest('.js-portfolio-container', currentNode);
 		container.classList.remove('state-portfolio--fullscreen');
 	};
 	DOMTools.delegate(
@@ -122,6 +125,11 @@
 	);
 	DOMTools.delegate(
 		'.state-portfolio--fullscreen .js-portfolio-fullscreen',
+		'click',
+		backgroundHide
+	);
+	DOMTools.delegate(
+		'.js-portfolio-close',
 		'click',
 		hidePortfolioFullscreen
 	);
