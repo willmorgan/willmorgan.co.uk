@@ -7,15 +7,39 @@
 	var DOMTools = {
 		/**
 		 * @param string selector (like .der-really-cool-klass-ja)
-		 * @return []<DOMElement>
+		 * @param DOMElement scope (leave null for document)
+		 * @return NodeList
 		 */
-		find: document.querySelectorAll,
+		find: function(selector, scope) {
+			scope = scope || document;
+			return scope.querySelectorAll(selector);
+		},
 		/**
-		 * @param DOMElement element
+		 * {@see DOMTools.find}
+		 * @return DOMElement|null the first element
+		 */
+		findOne: function(selector, scope) {
+			var results = DOMTools.find(selector, scope);
+			return (results && results.item(0)) || null;
+		},
+		closest: function(selector, scope) {
+			var currentScope = scope;
+			do {
+				if(currentScope.matches(selector)) {
+					return currentScope;
+				}
+				currentScope = currentScope.parentNode;
+			}
+			while(
+				currentScope.parentNode && currentScope != document
+			);
+		},
+		/**
 		 * @param string selector (like .der-really-cool-klass-ja)
+		 * @param DOMElement element
 		 * @return boolean
 		 */
-		matches: function(element, selector) {
+		matches: function(selector, element) {
 			var matches, i;
 			if('matches' in element) {
 				return element.matches(selector);
@@ -63,22 +87,9 @@
 		 */
 		_delegateListener: function(callback, target) {
 			return function(event) {
-				var currentNode = event.target,
-					nodeMatches;
-
-				// Visit the ancestors in case we're inside a nested child
-				while(
-					!(nodeMatches = DOMTools.matches(currentNode, target)) &&
-					currentNode.parentNode && currentNode != document
-				) {
-					currentNode = currentNode.parentNode;
-					if(!currentNode) {
-						break;
-					}
-				}
-
-				if(nodeMatches) {
-					callback(event, currentNode);
+				var delegator = DOMTools.closest(target, event.target);
+				if(delegator) {
+					callback(event, delegator);
 				}
 			};
 		},
