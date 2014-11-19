@@ -445,6 +445,7 @@ use the entire page height to cover.
 	.portfolio__nav-next,
 	.portfolio__nav-previous,
 	.portfolio__fullscreen__close {
+		display: none;
 		position: absolute;
 		z-index: 3000;
 	}
