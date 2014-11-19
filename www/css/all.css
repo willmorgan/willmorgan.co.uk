@@ -61,7 +61,6 @@ figure {
 
 figcaption {
 	font-size: .8em;
-	line-height: 1;
 }
 
 .cta {
@@ -97,6 +96,7 @@ figcaption {
 }
 
 .ui-panel {
+	position: relative;
 	min-height: 100vh;
 	overflow: hidden;
 	line-height: 100vh;
@@ -405,6 +405,40 @@ use the entire page height to cover.
 		font-size: .6em;
 	}
 
+	.portfolio__fullscreen {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 5000;
+		transition: all linear .25s;
+		pointer-events: none;
+		overflow: hidden;
+	}
+
+	.state-portfolio--fullscreen .portfolio__fullscreen {
+		background: rgba(0,0,0,.8);
+		pointer-events: all;
+	}
+
+	.portfolio__fullscreen > figure {
+		position: absolute;
+		width: 100%;
+		max-width: 100vmin;
+		top: -100%;
+		left: 50%;
+		opacity: 0;
+		transform: translate(-50%, -50%);
+		transition: top ease-in-out .5s, opacity linear .2s;
+		margin: 0;
+}
+
+	.state-portfolio--fullscreen .portfolio__fullscreen > figure {
+		top: 50%;
+		opacity: 1;
+	}
+
 }
 
 /**
@@ -412,7 +446,8 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 **/
 @media screen and (max-width: 1024px) {
 
-	.portfolio__screens .ui-backdrop {
+	.portfolio__screens .ui-backdrop,
+	.portfolio__fullscreen {
 		background: inherit;
 		padding: inherit;
 	}
@@ -421,10 +456,18 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 		text-decoration: underline;
 	}
 
+	.portfolio__screen figcaption {
+		line-height: 1;
+	}
+
 }
 
 @media screen and (min-width: 1024px) {
 
+	.portfolio__screens figcaption,
+	.portfolio__fullscreen figcaption {
+		color: #fff;
+	}
 
 	.portfolio__screens figcaption {
 		position: absolute;
@@ -435,7 +478,6 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 		font-size: .8em;
 		font-weight: 700;
 		opacity: 0;
-		color: #fff;
 		transition: top ease-in-out .2s, opacity linear .15s;
 	}
 

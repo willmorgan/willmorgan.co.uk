@@ -98,11 +98,31 @@
 	 * Enlarge the portfolio item, or something.
 	 */
 	var triggerPortfolioFullscreen = function(event, currentNode) {
-
+		var figure = DOMTools.findOne('figure', currentNode);
+		var container = DOMTools.closest('.js-portfolio-container', currentNode);
+		var frame = DOMTools.findOne('.js-portfolio-fullscreen', container);
+		frame.innerHTML = figure.outerHTML;
+		frame.offsetHeight;
+		container.classList.add('state-portfolio--fullscreen');
+	};
+	/**
+	 * Hide the portfolio item
+	 */
+	var hidePortfolioFullscreen = function(event, currentNode) {
+		var container = DOMTools.closest('.js-portfolio-container', currentNode);
+		if(event.target != currentNode) {
+			return;
+		}
+		container.classList.remove('state-portfolio--fullscreen');
 	};
 	DOMTools.delegate(
 		'.js-trigger-portfolio-fullscreen',
 		'click',
 		triggerPortfolioFullscreen
+	);
+	DOMTools.delegate(
+		'.state-portfolio--fullscreen .js-portfolio-fullscreen',
+		'click',
+		hidePortfolioFullscreen
 	);
 }());
