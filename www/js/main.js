@@ -25,7 +25,7 @@
 		closest: function(selector, scope) {
 			var currentScope = scope;
 			do {
-				if(currentScope.matches(selector)) {
+				if(DOMTools.matches(selector, currentScope)) {
 					return currentScope;
 				}
 			}
