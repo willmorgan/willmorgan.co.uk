@@ -74,6 +74,7 @@ figcaption {
 	text-decoration: none;
 	border-radius: .25em;
 	transition: all .1s linear;
+	-webkit-transition: all .1s linear;
 }
 
 	.cta:hover,
@@ -369,6 +370,7 @@ use the entire page height to cover.
 	.portfolio__screens {
 		position: relative;
 		width: 100%;
+		display: -webkit-flex;
 		display: flex;
 		align-items: baseline;
 		justify-content: center;
@@ -378,6 +380,9 @@ use the entire page height to cover.
 		/* tweak the where items line up on the row */
 		/* valid values are: flex-start, flex-end, space-between, space-around, stretch */
 		align-content: flex-end;
+		-webkit-flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		-webkit-align-content: flex-end;
 	}
 
 	.portfolio__screen {
@@ -386,6 +391,7 @@ use the entire page height to cover.
 		width: 33.33%;
 		padding: .25em;
 		transition: flex-grow .25s linear;
+		-webkit-transition: flex-grow .25s linear;
 		text-decoration: none;
 		color: inherit;
 	}
@@ -393,6 +399,7 @@ use the entire page height to cover.
 	.portfolio__screen img {
 		display: block;
 		transition: all linear .2s;
+		-webkit-transition: all linear .2s;
 	}
 
 	.portfolio__screen:hover img,
@@ -416,6 +423,7 @@ use the entire page height to cover.
 		z-index: 5000;
 		opacity: 0;
 		transition: all linear .25s;
+		-webkit-transition: all linear .25s;
 		pointer-events: none;
 		overflow: hidden;
 	}
@@ -434,7 +442,9 @@ use the entire page height to cover.
 		left: 50%;
 		opacity: 0;
 		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
 		transition: top ease-in-out .5s, opacity linear .2s;
+		-webkit-transition: top ease-in-out .5s, opacity linear .2s;
 		z-index: 2000;
 		margin: 0;
 	}
@@ -459,6 +469,7 @@ use the entire page height to cover.
 		width: 5vw;
 		text-align: center;
 		transition: transform ease-in-out .5s;
+		-webkit-transition: transform ease-in-out .5s;
 		text-indent: -9999em;
 		text-decoration: none;
 	}
@@ -466,6 +477,7 @@ use the entire page height to cover.
 	.portfolio__nav-next {
 		right: 5vw;
 		transform: translate(100%, 0);
+		-webkit-transform: translate(100%, 0);
 	}
 
 	.portfolio__nav-next:after,
@@ -486,11 +498,13 @@ use the entire page height to cover.
 	.portfolio__nav-previous {
 		left: 5vw;
 		transform: translate(-100%, 0);
+		-webkit-transform: translate(-100%, 0);
 	}
 
 	.state-portfolio--fullscreen .portfolio__nav-next,
 	.state-portfolio--fullscreen .portfolio__nav-previous {
 		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
 	}
 
 	.portfolio__fullscreen-close {
@@ -501,17 +515,22 @@ use the entire page height to cover.
 		text-align: right;
 	}
 
-	.portfolio__fullscreen-close .t {
+	.portfolio__fullscreen-close .t,
+	.portfolio__fullscreen-close:active .t {
 		opacity: 0;
+		padding-right: 0;
 		transition: all ease-in-out .35s;
+		-webkit-transition: all ease-in-out .35s;
 	}
 
-	.portfolio__fullscreen-close:hover .t {
+	.portfolio__fullscreen-close:hover .t,
+	.portfolio__fullscreen-close:focus .t {
 		padding-right: 1em;
 		opacity: 1;
 	}
 
-	.portfolio__fullscreen-close .x {
+	.portfolio__fullscreen-close .x,
+	.portfolio__fullscreen-close:active .x {
 		position: absolute;
 		font-size: 1.5em;
 		display: block;
@@ -520,11 +539,22 @@ use the entire page height to cover.
 		opacity: 1;
 		margin-top: -.55em;
 		transition: all ease-in-out .35s;
+		-webkit-transition: all ease-in-out .35s;
 	}
 
-	.portfolio__fullscreen-close:hover .x {
+	.portfolio__fullscreen-close:hover .x,
+	.portfolio__fullscreen-close:focus .x {
 		left: -1.33ch;
 		transform: rotate(-360deg);
+		-webkit-transform: rotate(-360deg);
+	}
+
+	.portfolio__screens figcaption {
+		color: inherit;
+	}
+
+	.portfolio__fullscreen figcaption {
+		color: #fff;
 	}
 
 }
@@ -532,7 +562,7 @@ use the entire page height to cover.
 /**
 Excluding this rule for any resolution over 1024 because it's kind of fiddly
 **/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 
 	.portfolio__screens .ui-backdrop,
 	.portfolio__fullscreen {
@@ -552,21 +582,19 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 
 @media screen and (min-width: 1280px) {
 
-	.portfolio__screens figcaption,
-	.portfolio__fullscreen figcaption {
-		color: #fff;
-	}
-
 	.portfolio__screens figcaption {
 		position: absolute;
 		top: 85%;
 		left: 50%;
+		color: #fff;
 		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
 		width: 100%;
 		font-size: .8em;
 		font-weight: 700;
 		opacity: 0;
 		transition: top ease-in-out .2s, opacity linear .15s;
+		-webkit-transition: top ease-in-out .2s, opacity linear .15s;
 	}
 
 
