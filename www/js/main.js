@@ -71,6 +71,14 @@
 		 * @return void
 		 */
 		delegate: function(target, ev, callback) {
+			var events = ev.split(' ');
+			var i;
+			if(events.length > 1) {
+				for(i in events) {
+					DOMTools.delegate(target, events[i], callback);
+				}
+				return;
+			}
 			document.addEventListener(
 				ev,
 				DOMTools._delegateListener(
