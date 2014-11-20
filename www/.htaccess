@@ -4,6 +4,11 @@
 
 FileETag None
 
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^cv/?$ https://docs.google.com/document/d/1cXZjQi9ESDVKs3lqAtWbvsepLz-HLDPao3I9PsYGryc/edit [R=302]
+</IfModule>
+
 <IfModule mod_expires.c>
 
     ExpiresActive on
