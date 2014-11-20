@@ -515,18 +515,22 @@ use the entire page height to cover.
 		text-align: right;
 	}
 
-	.portfolio__fullscreen-close .t {
+	.portfolio__fullscreen-close .t,
+	.portfolio__fullscreen-close:active .t {
 		opacity: 0;
+		padding-right: 0;
 		transition: all ease-in-out .35s;
 		-webkit-transition: all ease-in-out .35s;
 	}
 
-	.portfolio__fullscreen-close:hover .t {
+	.portfolio__fullscreen-close:hover .t,
+	.portfolio__fullscreen-close:focus .t {
 		padding-right: 1em;
 		opacity: 1;
 	}
 
-	.portfolio__fullscreen-close .x {
+	.portfolio__fullscreen-close .x,
+	.portfolio__fullscreen-close:active .x {
 		position: absolute;
 		font-size: 1.5em;
 		display: block;
@@ -538,7 +542,8 @@ use the entire page height to cover.
 		-webkit-transition: all ease-in-out .35s;
 	}
 
-	.portfolio__fullscreen-close:hover .x {
+	.portfolio__fullscreen-close:hover .x,
+	.portfolio__fullscreen-close:focus .x {
 		left: -1.33ch;
 		transform: rotate(-360deg);
 		-webkit-transform: rotate(-360deg);
@@ -557,7 +562,7 @@ use the entire page height to cover.
 /**
 Excluding this rule for any resolution over 1024 because it's kind of fiddly
 **/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 
 	.portfolio__screens .ui-backdrop,
 	.portfolio__fullscreen {
