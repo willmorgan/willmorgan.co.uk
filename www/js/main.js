@@ -141,4 +141,32 @@
 		'click',
 		hidePortfolioFullscreen
 	);
+	/**
+	 * Lazy loading (using Blazy)
+	 */
+	var images = DOMTools.find('.portfolio__screens img'),
+		image,
+		panel,
+		i;
+
+	for(i in images) {
+		image = images[i];
+		image.setAttribute('data-src', image.getAttribute('src'));
+		image.removeAttribute('srcset');
+		image.setAttribute(
+			'src',
+			'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs='
+		);
+	}
+
+	var panels = DOMTools.find('.ui-background-cover');
+	for(i in panels) {
+		panel = panels[i];
+		panel.setAttribute('data-src', panel.style.backgroundImage);
+	}
+
+	var blazy = new Blazy({
+		selector: '.portfolio__screens img'
+	});
+
 }());
