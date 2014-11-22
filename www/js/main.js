@@ -12,7 +12,7 @@
 		 */
 		find: function(selector, scope) {
 			scope = scope || document;
-			return scope.querySelectorAll(selector);
+			return [].slice.call(scope.querySelectorAll(selector));
 		},
 		/**
 		 * {@see DOMTools.find}
@@ -20,7 +20,7 @@
 		 */
 		findOne: function(selector, scope) {
 			var results = DOMTools.find(selector, scope);
-			return (results && results.item(0)) || null;
+			return (results && results[0]) || null;
 		},
 		closest: function(selector, scope) {
 			var currentScope = scope;
