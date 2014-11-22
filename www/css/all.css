@@ -102,7 +102,7 @@ figcaption {
 	overflow: hidden;
 	line-height: 100vh;
 	text-align: center;
-	padding: 10vh 0;
+	padding: 10% 0;
 	box-sizing: content-box;
 }
 
@@ -130,9 +130,7 @@ figcaption {
 	.ui-panel--content {
 		font-size: 1.4rem;
 	}
-}
 
-@media screen and (min-width: 768px) {
 	.ui-panel--content {
 		font-size: 1.6rem;
 	}
@@ -390,8 +388,6 @@ use the entire page height to cover.
 		position: relative;
 		width: 33.33%;
 		padding: .25em;
-		transition: flex-grow .25s linear;
-		-webkit-transition: flex-grow .25s linear;
 		text-decoration: none;
 		color: inherit;
 	}
