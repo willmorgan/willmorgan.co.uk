@@ -22,6 +22,12 @@ h6 {
 	margin-top: 0;
 }
 
+h4,
+h5,
+h6 {
+	font-size: 1.4em;
+}
+
 h1 a,
 h2 a,
 h3 a,
@@ -332,6 +338,20 @@ use the entire page height to cover.
 .portfolio__fullscreen,
 .portfolio__screens {
 	display: none;
+}
+
+.closing__credits ul {
+	font-size: .8em;
+	line-height: 1.4em;
+}
+
+.closing__credits li {
+	display: inline-block;
+}
+
+.closing__copyright {
+	font-size: .6em;
+	line-height: 1;
 }
 
 @media screen and (min-width: 768px) {
