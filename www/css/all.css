@@ -358,10 +358,13 @@ use the entire page height to cover.
 .closing__credits ul {
 	font-size: .8em;
 	line-height: 1.4em;
+	margin: 0;
 }
 
 .closing__credits li {
 	display: inline-block;
+	width: 25%;
+	margin: 0 0 1em;
 }
 
 .closing__copyright {
