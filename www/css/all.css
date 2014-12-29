@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #161629;
+	background: rgb(22, 22, 41);
 	color: #efefef;
 }
 
@@ -76,7 +76,8 @@ figcaption {
 	width: 90%;
 	margin: 1em auto;
 	border: 1px solid #ddddf2;
-	color: #ddddf2;
+	background: rgba(22, 22, 41, .85);
+	color: #fff;
 	text-decoration: none;
 	border-radius: .25em;
 	transition: all .1s linear;
@@ -199,6 +200,20 @@ figcaption {
 		font-size: .6em;
 	}
 
+}
+
+.about--intro .cta {
+	padding-top: .33em;
+	padding-bottom: .33em;
+	margin-top: 0;
+	margin-bottom: 0;
+	background: rgba(0, 0, 0, .4);
+}
+
+.about--intro .cta:hover,
+.about--intro .cta:active,
+.about--intro .cta:focus {
+	background: rgba(0, 0, 0, .8);
 }
 
 .about--skills {
