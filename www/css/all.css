@@ -354,7 +354,67 @@ use the entire page height to cover.
 	line-height: 1;
 }
 
+.skills__buzzwords {
+	cursor: default;
+}
+
+.skills__buzzword {
+	display: inline-block;
+	position: relative;
+	list-style: none;
+	width: 25%;
+	font-size: 2.5em;
+	font-size: 7.5vh;
+}
+
+.skills__buzzword a.devicons {
+	transition: all ease-in-out .1s;
+	-webkit-transition: all ease-in-out .1s;
+	text-decoration: none;
+}
+
+.skills__buzzword .tooltip {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	font-size: 1.6rem;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	transition: all ease-in-out .15s;
+	-webkit-transition: all ease-in-out .15s;
+}
+
+.skills__buzzword:hover .devicons,
+.skills__buzzword .devicons:active,
+.skills__buzzword .devicons:focus {
+	outline: none;
+	text-shadow: 0 .1em .2em rgba(0,0,0,.85);
+	opacity: 1;
+	color: #fff;
+}
+
+.skills__buzzword:hover .tooltip,
+.skills__buzzword .devicons:active + .tooltip,
+.skills__buzzword .devicons:focus + .tooltip {
+	opacity: 1;
+	bottom: -1.5em;
+	transition-duration: opacity .15s, bottom .25s;
+}
+
 @media screen and (min-width: 768px) {
+
+	.skills__buzzword {
+		width: 12.5%;
+		margin: .25em 0;
+	}
+
+	.skills__buzzword .devicons {
+		color: #efefef;
+		opacity: .65;
+	}
 
 	.portfolio .ui-panel--content {
 		padding-top: 10%;
@@ -632,6 +692,12 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 }
 
 @media screen and (min-width: 1280px) {
+
+	.skills__buzzword {
+		width: 12.5%;
+		margin: .25em 0;
+		font-size: 4em;
+	}
 
 	.portfolio__screens figcaption {
 		position: absolute;
