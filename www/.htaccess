@@ -101,6 +101,7 @@ RewriteRule ^cv/?$ https://docs.google.com/document/d/1cXZjQi9ESDVKs3lqAtWbvsepL
                                       "application/vnd.geo+json" \
                                       "application/vnd.ms-fontobject" \
                                       "application/x-font-ttf" \
+                                      "application/font-woff" \
                                       "application/x-javascript" \
                                       "application/x-web-app-manifest+json" \
                                       "application/xhtml+xml" \
@@ -137,6 +138,9 @@ RewriteRule ^cv/?$ https://docs.google.com/document/d/1cXZjQi9ESDVKs3lqAtWbvsepL
     # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
 
     <IfModule mod_mime.c>
+        AddType application/font-woff           woff
+        AddType application/font-woff2          woff2
+        AddType application/vnd.ms-fontobject   eot
         AddEncoding gzip              svgz
     </IfModule>
 
