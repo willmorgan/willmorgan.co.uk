@@ -32,6 +32,8 @@ Vagrant.configure("2") do |config|
   #config.vm.provision :shell, :path => "environment/scripts/custom-yum-remi-repo.sh" # needed for xsendfile
   config.vm.provision :shell, :path => "environment/scripts/mysql.sh"
   config.vm.provision :shell, :path => "environment/scripts/composer.sh"
+  config.vm.provision :shell, :path => "environment/scripts/node.sh"
+  config.vm.provision :shell, :path => "environment/scripts/gulp.sh"
   config.vm.provision :shell, :path => "environment/scripts/bootstrap.sh"
   config.vm.provision :shell, :path => "environment/scripts/always.sh", run: "always"
 

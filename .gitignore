@@ -3,3 +3,4 @@
 .env.php
 .vagrant
 *.sublime-*
+node_modules/
