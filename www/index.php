@@ -1,3 +1,4 @@
+<?php $hash = include_once 'hash.php'; ?>
 <!doctype html>
 <html lang="en-GB">
 	<head prefix="og: http://ogp.me/ns#">
@@ -16,7 +17,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<link rel="canonical" href="http://willmorgan.co.uk/" />
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
-		<link rel="stylesheet" href="css/_combined-0.11.css" />
+		<link rel="stylesheet" href="css/_combined-<?=$hash?>.css" />
 		<link rel="shortcut icon" href="favicon.png" />
 		<script src="js/blazy.min.js"></script>
 	</head>
@@ -441,6 +442,6 @@
 				</div>
 			</article>
 		</section>
-		<script async="async" src="js/_combined-0.11.js"></script>
+		<script async="async" src="js/_combined-<?=$hash?>.js"></script>
 	</body>
 </html>
