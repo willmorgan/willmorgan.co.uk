@@ -129,6 +129,22 @@ figcaption {
 	padding: 0 0;
 }
 
+.ui-panel--fluidheight {
+	min-height: 0;
+	line-height: 0;
+}
+
+.ui-panel__credit {
+	position: absolute;
+	font-size: .7rem;
+	bottom: 1em;
+	right: 1em;
+	left: 1em;
+	line-height: 1;
+	opacity: .6;
+	text-align: center;
+}
+
 @media screen and (min-width: 768px) {
 	.ui-panel {
 		padding: 2.5em 0;
@@ -140,6 +156,11 @@ figcaption {
 
 	.ui-panel--content {
 		font-size: 1.6rem;
+	}
+
+	.ui-panel__credit {
+		text-align: right;
+		opacity: .7;
 	}
 }
 
@@ -353,18 +374,6 @@ use the entire page height to cover.
 .portfolio__fullscreen,
 .portfolio__screens {
 	display: none;
-}
-
-.closing__credits ul {
-	font-size: .8em;
-	line-height: 1.4em;
-	margin: 0;
-}
-
-.closing__credits li {
-	display: inline-block;
-	width: 25%;
-	margin: 0 0 1em;
 }
 
 .closing__copyright {

@@ -43,6 +43,10 @@
 					<p><span class="ui-backdrop">I'm currently available for hire on a freelance / contract basis.</span></p>
 					<p><a class="cta" href="#hire">Get in touch.</a></p>
 				</div>
+				<span class="ui-panel__credit">
+					Photo credit:
+					<a rel="nofollow" target="_blank" href="http://www.flickr.com/photos/42276448@N07/9523358689/">Alex Ellison</a>
+				</span>
 			</article>
 			<article class="about--skills ui-panel ui-background-cover">
 				<div class="ui-panel--content">
@@ -116,6 +120,10 @@
 						</li>
 					</ul>
 				</div>
+				<span class="ui-panel__credit">
+					Photo credit:
+					<a rel="nofollow" target="_blank" href="http://rhexperience.wordpress.com/2014/10/23/gold-diggers-black-smiths/">Rafael Hernandez</a>
+				</span>
 			</article>
 		</section>
 		<section class="portfolio">
@@ -396,11 +404,6 @@
 			<article class="closing--credits ui-panel">
 				<div class="ui-panel--content">
 					<section class="closing__credits">
-						<h5>Photography credits</h5>
-						<ul>
-							<li><a rel="nofollow" href="http://www.flickr.com/photos/42276448@N07/9523358689/lightbox/">Alex Ellison (East London)</a></li>
-							<li><a rel="nofollow" href="http://rhexperience.wordpress.com/2014/10/23/gold-diggers-black-smiths/">Rafael Hernandez (blacksmith)</a></li>
-						</ul>
 						<div class="closing__copyright">
 							<p>W Morgan Ltd. Company number 09330288, registered in England &amp; Wales</p>
 						</div>
