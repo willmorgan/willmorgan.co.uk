@@ -19,7 +19,6 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
 		<link rel="stylesheet" href="css/_combined-<?=$hash?>.css" />
 		<link rel="shortcut icon" href="favicon.png" />
-		<script src="js/blazy.min.js"></script>
 	</head>
 	<body>
 		<script>//
@@ -442,6 +441,6 @@
 				</div>
 			</article>
 		</section>
-		<script async="async" src="js/_combined-<?=$hash?>.js"></script>
+		<script src="js/_combined-<?=$hash?>.js"></script>
 	</body>
 </html>

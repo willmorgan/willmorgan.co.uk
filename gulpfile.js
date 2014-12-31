@@ -21,7 +21,12 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-	gulp.src('./www/js/main.js')
+	gulp.src(
+		[
+			'./www/js/blazy.min.js',
+			'./www/js/main.js'
+		]
+	)
 	.pipe(concat('./www/js/_combined.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('.'));
