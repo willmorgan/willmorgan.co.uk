@@ -395,36 +395,6 @@
 			</article>
 			<article class="closing--credits ui-panel">
 				<div class="ui-panel--content">
-					<section class="closing__team-credits">
-						<h5>Friends &amp; colleagues</h5>
-						<p>Additional credit, where appropriate, is attributed to the following brilliant team I've worked with over the years:</p>
-						<ul class="team">
-							<li>
-								<h6><a target="_blank" href="https://github.com/dhensby">Dan Hensby</a></h6>
-								<span class="team__role">technical director, rubber duck, excitable pool player</span>
-							</li>
-							<li>
-								<h6><a target="_blank" href="http://dougproctor.co.uk/">Doug Proctor</a></h6>
-								<span class="team__role">user experience designer, user interface developer, all-round fantastic bloke</span>
-							</li>
-							<li>
-								<h6><a target="_blank" href="http://www.davehill.me/">Dave Hill</a></h6>
-								<span class="team__role">developer, Super Dave&trade;, fellow coffee appreciator</span>
-							</li>
-							<li>
-								<h6><a target="_blank" href="http://www.tomspeak.co.uk/">Tom Speak</a></h6>
-								<span class="team__role">developer, 3.1x body weight deadlifter, writer of strongly typed code</span>
-							</li>
-							<li>
-								<h6><a target="_blank" href="http://mike.andrewartha.co.nz/">Mike Andrewartha</a></h6>
-								<span class="team__role">developer, coffee and craft beer aficionado</span>
-							</li>
-							<li>
-								<h6><a target="_blank" href="http://www.m-lewis.co.uk/">Matt Lewis</a></h6>
-								<span class="team__role">developer, expert chess player</span>
-							</li>
-						</ul>
-					</section>
 					<section class="closing__credits">
 						<h5>Photography credits</h5>
 						<ul>
