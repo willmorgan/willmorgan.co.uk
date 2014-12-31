@@ -253,6 +253,10 @@ figcaption {
 	background-image: url(../img/1024-coffee-beans.jpg);
 }
 
+.footer {
+	background: #121212;
+}
+
 /**
 Switch on the nice scrolling effect for desktops.
 It's a bit iffy on mobiles - especially mobile Safari - because the backgrounds
@@ -376,8 +380,8 @@ use the entire page height to cover.
 	display: none;
 }
 
-.closing__copyright {
-	font-size: .6em;
+.footer__copyright {
+	font-size: 1em;
 	line-height: 1;
 }
 

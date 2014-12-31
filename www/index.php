@@ -401,11 +401,14 @@
 					</section>
 				</div>
 			</article>
-			<article class="closing--credits ui-panel">
-				<div class="ui-panel--content">
-					<section class="closing__credits">
-						<div class="closing__copyright">
+		</section>
+		<section class="footer">
+			<article class="footer__info">
+				<div class="ui-panel ui-panel--fluidheight">
+					<section>
+						<div class="footer__copyright">
 							<p>W Morgan Ltd. Company number 09330288, registered in England &amp; Wales</p>
+							<p>Copyright &copy; 2014 W Morgan Ltd</p>
 						</div>
 					</section>
 				</div>
