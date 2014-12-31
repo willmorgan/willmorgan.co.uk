@@ -399,10 +399,7 @@
 						<h5>Photography credits</h5>
 						<ul>
 							<li><a rel="nofollow" href="http://www.flickr.com/photos/42276448@N07/9523358689/lightbox/">Alex Ellison (East London)</a></li>
-							<li><a rel="nofollow" href="https://www.flickr.com/photos/willfaichneyphotography/15559869395/">Will Faichney (City at Dusk)</a></li>
 							<li><a rel="nofollow" href="http://rhexperience.wordpress.com/2014/10/23/gold-diggers-black-smiths/">Rafael Hernandez (blacksmith)</a></li>
-							<li><a rel="nofollow" href="http://www.dna-et.com/et-dna---the-wall-1920x1200-resolution-wallpaper/tag/%22technics%201210mk5%22">Eksovichea Tito Hak (1210s strobe)</a></li>
-							<li><a rel="nofollow" href="http://pichost.me/1657150/">Pichost.me (coffee beans)</a></li>
 						</ul>
 						<div class="closing__copyright">
 							<p>W Morgan Ltd. Company number 09330288, registered in England &amp; Wales</p>
