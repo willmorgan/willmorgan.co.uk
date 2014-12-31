@@ -35,6 +35,6 @@ gulp.task('scripts', function() {
 gulp.task('default', ['styles', 'scripts']);
 
 gulp.task('watch', function() {
-	gulp.watch('./www/css/all.css', ['combine']);
+	gulp.watch('./www/css/all.css', ['styles']);
 	gulp.watch('./www/js/main.js', ['scripts']);
 });
