@@ -100,6 +100,15 @@
 				}
 			};
 		},
+		/**
+		 * @param string html
+		 * @return Node
+		 */
+		createFromHTML: function(html) {
+			var fragment = document.createElement('div');
+			fragment.innerHTML = html;
+			return fragment.firstChild;
+		},
 	};
 	/**
 	 * Enlarge the portfolio item, or something.
@@ -149,13 +158,20 @@
 		panel,
 		i;
 
+	var loaderHTML = '<div class="loader"></div>';
+
 	for(i in images) {
 		image = images[i];
 		image.setAttribute('data-src', image.getAttribute('src'));
 		image.removeAttribute('srcset');
+		image.classList.add('img--loading');
 		image.setAttribute(
 			'src',
 			'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs='
+		);
+		image.parentNode.insertBefore(
+			DOMTools.createFromHTML(loaderHTML),
+			image.nextSibling
 		);
 	}
 

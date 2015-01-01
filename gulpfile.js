@@ -9,7 +9,8 @@ gulp.task('styles', function() {
 		[
 			'./www/css/normalize.css',
 			'./www/css/all.css',
-			'./www/css/devicons.css'
+			'./www/css/devicons.css',
+			'./www/css/spinner.css'
 		]
 	)
 	.pipe(autoprefix({

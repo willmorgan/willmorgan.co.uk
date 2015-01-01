@@ -379,6 +379,18 @@ use the entire page height to cover.
 	display: none;
 }
 
+.portfolio__screens .loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0 0 -16px;
+	border-radius: 50%;
+}
+
+.portfolio--lbf .loader {
+	background-color: rgba(0,0,0,.5);
+}
+
 .footer__copyright {
 	font-size: 1em;
 	line-height: 1;
@@ -490,10 +502,17 @@ use the entire page height to cover.
 
 	.js .portfolio__screens img {
 		opacity: 0;
+		pointer-events: none;
 	}
 
 	.js .portfolio__screen img.b-loaded {
 		opacity: 1;
+		pointer-events: all;
+	}
+
+	.js .b-loaded+.loader,
+	.portfolio__fullscreen .loader {
+		opacity: 0;
 	}
 
 	.portfolio__screen:hover img,
