@@ -169,4 +169,6 @@
 		selector: '.portfolio__screens img'
 	});
 
+	FastClick.attach(document.body);
+
 }());

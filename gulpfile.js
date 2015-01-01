@@ -13,7 +13,13 @@ gulp.task('styles', function() {
 		]
 	)
 	.pipe(autoprefix({
-		browsers: ['last 3 versions']
+		browsers: [
+			'last 3 versions',
+			'last 3 android versions',
+			'last 3 ios_saf versions',
+			'last 3 and_chr versions',
+			'last 3 and_ff versions',
+		]
 	}))
 	.pipe(concat('./www/css/_combined.css'))
 	.pipe(minifyCSS())
@@ -24,6 +30,7 @@ gulp.task('scripts', function() {
 	gulp.src(
 		[
 			'./www/js/blazy.min.js',
+			'./www/js/fastclick-1.0.3.js',
 			'./www/js/main.js'
 		]
 	)
