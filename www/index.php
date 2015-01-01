@@ -397,6 +397,8 @@
 						<ul>
 							<li><a href="https://github.com/willmorgan">GitHub</a></li>
 							<li><a href="https://twitter.com/willmorgan">Twitter</a></li>
+							<li><a href="https://medium.com/@willmorgan">Medium</a></li>
+							<li><a href="https://stackoverflow.com/users/127522/will-morgan">StackOverflow</a></li>
 						</ul>
 					</section>
 				</div>
