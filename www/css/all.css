@@ -689,7 +689,7 @@ use the entire page height to cover.
 /**
 Excluding this rule for any resolution over 1024 because it's kind of fiddly
 **/
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
 
 	.portfolio__screens .ui-backdrop,
 	.portfolio__fullscreen {
