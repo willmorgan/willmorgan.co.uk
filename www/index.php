@@ -38,7 +38,6 @@
 					<h1 class="ui-shadow">An experienced developer who builds products on the web.</h1>
 					<img class="not-a-selfie" alt="Will Morgan" src="img/will-morgan-200.jpg" />
 					<p><span class="ui-backdrop">Hello. I'm Will, a senior web developer based in London, UK.</span></p>
-					<p><span class="ui-backdrop">I've been building things for over 10 years.</span></p>
 					<p><span class="ui-backdrop">I care about building products well, giving attention to detail all the way from prototyping to deployment.</span></p>
 					<p><span class="ui-backdrop">I'm currently available for hire on a freelance / contract basis.</span></p>
 					<p><a class="cta" href="#hire">Get in touch.</a></p>
