@@ -36,7 +36,7 @@
 			<article class="about--intro ui-panel ui-background-cover">
 				<div class="ui-panel--content">
 					<h1 class="ui-shadow">An experienced developer who builds products on the web.</h1>
-					<img class="not-a-selfie" alt="Will Morgan" src="img/will-morgan.jpg" />
+					<img class="not-a-selfie" alt="Will Morgan" src="img/will-morgan-200.jpg" />
 					<p><span class="ui-backdrop">Hello. I'm Will, a senior web developer based in London, UK.</span></p>
 					<p><span class="ui-backdrop">I've been building things for over 10 years.</span></p>
 					<p><span class="ui-backdrop">I care about building products well, giving attention to detail all the way from prototyping to deployment.</span></p>
