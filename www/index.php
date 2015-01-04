@@ -166,31 +166,31 @@
 					<section class="portfolio__screens">
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/greggs/01-signin.jpg" alt="Greggs Rewards: Social signin screen" />
+								<img src="img/greggs/01-signin-540.jpg" alt="Greggs Rewards: Social signin screen" />
 								<figcaption><span class="ui-backdrop">Social signin screen</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/greggs/02-topup.jpg" alt="Greggs Rewards: Top up order process" />
+								<img src="img/greggs/02-topup-540.jpg" alt="Greggs Rewards: Top up order process" />
 								<figcaption><span class="ui-backdrop">Top up order process</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/greggs/03-payment-setup.jpg" alt="Greggs Rewards: Payment choice screen" />
+								<img src="img/greggs/03-payment-setup-540.jpg" alt="Greggs Rewards: Payment choice screen" />
 								<figcaption><span class="ui-backdrop">Payment choice screen</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/greggs/05-order-complete.jpg" alt="Greggs Rewards: Order complete page" />
+								<img src="img/greggs/05-order-complete-540.jpg" alt="Greggs Rewards: Order complete page" />
 								<figcaption><span class="ui-backdrop">Order complete page</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/greggs/06-order-history.jpg" alt="Greggs Rewards: Order history" />
+								<img src="img/greggs/06-order-history-540.jpg" alt="Greggs Rewards: Order history" />
 								<figcaption><span class="ui-backdrop">Order history</span></figcaption>
 							</figure>
 						</a>
@@ -239,37 +239,37 @@
 					<section class="portfolio__screens">
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/ac/01-home.png" alt="Aston Chase: Homepage" />
+								<img src="img/ac/01-home-540.jpg" alt="Aston Chase: Homepage" />
 								<figcaption><span class="ui-backdrop">Homepage</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/ac/02-multilingual.png" alt="Aston Chase: Multilingual content pages" />
+								<img src="img/ac/02-multilingual-540.jpg" alt="Aston Chase: Multilingual content pages" />
 								<figcaption><span class="ui-backdrop">Multilingual functionality</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/ac/03-search.png" alt="Aston Chase: Dynamic search form" />
+								<img src="img/ac/03-search-540.jpg" alt="Aston Chase: Dynamic search form" />
 								<figcaption><span class="ui-backdrop">Dynamic search form</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/ac/04-listing.png" alt="Aston Chase: Listing page" />
+								<img src="img/ac/04-listing-540.jpg" alt="Aston Chase: Listing page" />
 								<figcaption><span class="ui-backdrop">Listing page</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/ac/05-map.png" alt="Aston Chase: Details page" />
+								<img src="img/ac/05-map-540.jpg" alt="Aston Chase: Details page" />
 								<figcaption><span class="ui-backdrop">Details page</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/ac/06-panoramic.png" alt="Aston Chase: Panoramic images" />
+								<img src="img/ac/06-panoramic-540.jpg" alt="Aston Chase: Panoramic images" />
 								<figcaption><span class="ui-backdrop">Panoramic images</span></figcaption>
 							</figure>
 						</a>
@@ -319,55 +319,55 @@
 					<section class="portfolio__screens">
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/03-event-page.png" alt="Event system: Event page" />
+								<img src="img/lbf/03-event-page-540.jpg" alt="Event system: Event page" />
 								<figcaption><span class="ui-backdrop">Event page</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/04-basket.png" alt="Event system: Basket review" />
+								<img src="img/lbf/04-basket-540.jpg" alt="Event system: Basket review" />
 								<figcaption><span class="ui-backdrop">Basket review</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/05-payment.png" alt="Event system: Payments with Stripe" />
+								<img src="img/lbf/05-payment-540.jpg" alt="Event system: Payments with Stripe" />
 								<figcaption><span class="ui-backdrop">Payments with Stripe</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/06-order-complete.png" alt="Event system: Purchase success" />
+								<img src="img/lbf/06-order-complete-540.jpg" alt="Event system: Purchase success" />
 								<figcaption><span class="ui-backdrop">Purchase success</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/07-ticket.png" alt="Event system: Ticket generated to PDF" />
+								<img src="img/lbf/07-ticket-540.jpg" alt="Event system: Ticket generated to PDF" />
 								<figcaption><span class="ui-backdrop">Ticket generated to PDF</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/02-past-events.png" alt="Event system: Event listing" />
+								<img src="img/lbf/02-past-events-540.jpg" alt="Event system: Event listing" />
 								<figcaption><span class="ui-backdrop">Event listing</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/08-package-management.png" alt="Event system: User dashboard for packages" />
+								<img src="img/lbf/08-package-management-540.jpg" alt="Event system: User dashboard for packages" />
 								<figcaption><span class="ui-backdrop">User package dashboard</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/09-ticket-management.png" alt="Event system: User dashboard for tickets" />
+								<img src="img/lbf/09-ticket-management-540.jpg" alt="Event system: User dashboard for tickets" />
 								<figcaption><span class="ui-backdrop">User ticket dashboard</span></figcaption>
 							</figure>
 						</a>
 						<a href="javascript:;" class="portfolio__screen js-trigger-portfolio-fullscreen">
 							<figure>
-								<img src="img/lbf/10-ticket-basket.png" alt="Event system: Ticket assignment" />
+								<img src="img/lbf/10-ticket-basket-540.jpg" alt="Event system: Ticket assignment" />
 								<figcaption><span class="ui-backdrop">Ticket assignment</span></figcaption>
 							</figure>
 						</a>
