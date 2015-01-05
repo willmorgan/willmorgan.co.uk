@@ -379,6 +379,7 @@ use the entire page height to cover.
 	display: none;
 }
 
+.portfolio__fullscreen .loader,
 .portfolio__screens .loader {
 	position: absolute;
 	top: 50%;
@@ -510,8 +511,8 @@ use the entire page height to cover.
 		pointer-events: all;
 	}
 
-	.js .b-loaded+.loader,
-	.portfolio__fullscreen .loader {
+	.js .b-loaded+.loader {
+		display: none;
 		opacity: 0;
 	}
 
@@ -549,7 +550,7 @@ use the entire page height to cover.
 	.portfolio__fullscreen > div {
 		position: absolute;
 		width: 100%;
-		max-width: 90vmin;
+		max-width: 100vmin;
 		top: -100%;
 		left: 50%;
 		opacity: 0;
@@ -665,23 +666,41 @@ use the entire page height to cover.
 		color: #fff;
 	}
 
+	.portfolio__fullscreen img[data-large] {
+		display: none;
+	}
+
 	/** Responsive images - work out ratios **/
 	/*431/305*/
-	.portfolio--ac .portfolio__screen figure {
+	.portfolio--ac figure,
+	.portfolio--ac .portfolio__fullscreen .img--large {
 		height: 0;
 		padding-bottom: 70.76%;
 	}
 
 	/*431/389*/
-	.portfolio--greggs .portfolio__screen figure {
+	.portfolio--greggs figure,
+	.portfolio--greggs .portfolio__fullscreen .img--large {
 		height: 0;
 		padding-bottom: 90.25%;
 	}
 
 	/*431/353*/
-	.portfolio--lbf .portfolio__screen figure {
+	.portfolio--lbf figure,
+	.portfolio--lbf .portfolio__fullscreen .img--large {
 		height: 0;
 		padding-bottom: 82.03%;
+	}
+
+	.portfolio__fullscreen .img--large {
+		opacity: 0;
+		transition: opacity ease-in-out .5s;
+	}
+
+	.ui-panel .portfolio__fullscreen .img--large.b-loaded {
+		opacity: 1;
+		height: auto;
+		padding-bottom: 0;
 	}
 
 }

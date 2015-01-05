@@ -115,10 +115,18 @@
 	 */
 	var triggerPortfolioFullscreen = function(event, currentNode) {
 		var figure = DOMTools.findOne('figure', currentNode);
+		var image = DOMTools.findOne('img', figure);
 		var container = DOMTools.closest('.js-portfolio-container', currentNode);
 		var frame = DOMTools.findOne('.js-portfolio-fullscreen', container);
 		var target = DOMTools.findOne('.js-portfolio-fullscreen-target', frame);
+		var large = DOMTools.createFromHTML('<img src="'+image.getAttribute('data-large')+'" class="img--large" />')
 		target.innerHTML = figure.outerHTML;
+		var targetImage = DOMTools.findOne('img', target);
+		large.onload = function() {
+			this.classList.add('b-loaded');
+		}
+		targetImage.parentNode.insertBefore(large, targetImage.nextSibling);
+
 		target.offsetHeight;
 		container.classList.add('state-portfolio--fullscreen');
 	};
