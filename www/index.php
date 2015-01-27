@@ -3,7 +3,7 @@
 <html lang="en-GB">
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="utf-8" />
-		<title>Will Morgan | Senior Multi Discipline Web Developer</title>
+		<title>Will Morgan | Senior PHP, JavaScript and CSS Web Developer</title>
 		<meta name="description" content="Will Morgan, senior web developer based in London, UK." />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@willmorgan" />
@@ -33,13 +33,15 @@
 			ga('send', 'pageview');
 		</script>
 		<section class="about">
-			<article class="about--intro ui-panel ui-background-cover">
+			<article class="about--intro ui-panel">
 				<div class="ui-panel--content">
-					<h1 class="ui-shadow">An experienced developer who builds products on the web.</h1>
-					<img class="not-a-selfie" alt="Will Morgan" src="img/will-morgan-200.jpg" />
-					<p><span class="ui-backdrop">Hello. I'm Will, a senior web developer based in London, UK.</span></p>
-					<p><span class="ui-backdrop">I care about building products well, giving attention to detail all the way from prototyping to deployment.</span></p>
-					<p><span class="ui-backdrop">I'm currently available for hire on a freelance / contract basis.</span></p>
+					<h1>
+						<img class="logo" alt="Will Morgan" src="img/will-morgan-logo.png" />
+						Experienced web product developer
+					 </h1>
+					<p>Hello. I'm Will, a senior PHP, JavaScript and CSS web developer based in London, UK.</p>
+					<p>I care about building products well, giving attention to detail all the way from prototyping to deployment.</p>
+					<p>I'm currently available for hire on a freelance / contract basis.</p>
 					<p><a class="cta" href="#hire">Get in touch.</a></p>
 				</div>
 				<span class="ui-panel__credit">

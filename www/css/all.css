@@ -187,7 +187,10 @@ figcaption {
 }
 
 .about--intro {
-	background-image: url(../img/1024-colourful-building-credit-alex-ellison.jpg);
+	background-color: #161629;
+	background-image: url(../img/about-intro-stripes.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
 	padding-top: 5%;
 }
 
@@ -203,6 +206,12 @@ figcaption {
 	width: 40%;
 	border-radius: 50%;
 	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
+}
+
+.about .logo {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
 }
 
 @media screen and (min-width: 768px) {
@@ -270,10 +279,6 @@ use the entire page height to cover.
 	/**
 	Can't wait for image-set / srcset support -_-
 	**/
-	.about--intro {
-		background-image: url(../img/colourful-building-credit-alex-ellison.jpg);
-	}
-
 	.about--skills {
 		background-image: url(../img/blacksmith-axe-head-credit-rafael-hernandez.jpg);
 	}
