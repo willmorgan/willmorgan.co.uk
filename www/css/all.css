@@ -122,6 +122,11 @@ figcaption {
 	text-align: center;
 }
 
+.ui-panel--stripes {
+	position: relative;
+	z-index: 200;
+}
+
 .ui-panel--divider {
 	min-height: 50vh;
 	line-height: 100%;
@@ -187,14 +192,73 @@ figcaption {
 }
 
 .about--intro {
-	background-color: #161629;
-	background-image: url(../img/about-intro-stripes.png);
+	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 	padding-top: 5%;
 }
 
+.about--intro .stripes {
+	display: none;
+}
+
 @media screen and (min-width: 768px) {
+
+	.about--intro .stripes {
+		display: block;
+	}
+
+	.about--intro .stripes__sprite,
+	.stripes--transbackground {
+		position: absolute;
+	}
+
+	.stripes--1 {
+		left: 50%;
+		top: 0;
+	}
+
+	.stripes--2 {
+		left: 25%;
+		bottom: 30%;
+	}
+
+	.stripes--3 {
+		z-index: 200;
+		left: 5%;
+		bottom: 5%;
+	}
+
+	.stripes--4 {
+		left: 10%;
+		top: 30%;
+	}
+
+	.stripes--5 {
+		right: 10%;
+		top: 20%;
+	}
+
+	.stripes--6--holder {
+		right: 20%;
+		top: 10%;
+	}
+
+	.stripes--7--holder {
+		left: 0;
+		top: 0;
+	}
+
+	.stripes--8--holder {
+		right: 0;
+		bottom: 0;
+	}
+
+	.stripes--9--holder {
+		left: 10%;
+		bottom: 10%;
+	}
+
 	.about--intro {
 		padding-top: 0;
 	}

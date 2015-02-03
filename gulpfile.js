@@ -10,6 +10,7 @@ gulp.task('styles', function() {
 			'./www/css/normalize.css',
 			'./www/css/all.css',
 			'./www/css/devicons.css',
+			'./www/css/stripes.css',
 			'./www/css/spinner.css'
 		]
 	)
@@ -43,6 +44,6 @@ gulp.task('scripts', function() {
 gulp.task('default', ['styles', 'scripts']);
 
 gulp.task('watch', function() {
-	gulp.watch('./www/css/all.css', ['styles']);
+	gulp.watch(['./www/css/all.css', './www/css/stripes.css'], ['styles']);
 	gulp.watch('./www/js/main.js', ['scripts']);
 });

@@ -1,0 +1,26 @@
+.stripes {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.stripes__sprite { background: url(../img/stripes/sprites.png) no-repeat; }
+.stripes--1 { width: 169px; height: 168px; background-position: -996px 0; }
+.stripes--2 { width: 329px; height: 326px; background-position: -332px -556px; }
+.stripes--3 { width: 224px; height: 182px; background-position: -601px 0; }
+.stripes--4 { width: 303px; height: 264px; background-position: -845px -168px; }
+.stripes--5 { width: 601px; height: 556px; background-position: 0 0; }
+/** Transparent **/
+.stripes--6, .stripes--6--holder { width: 171px; height: 166px; background-position: -825px 0; }
+.stripes--7, .stripes--7--holder { width: 244px; height: 239px; background-position: -601px -182px; }
+.stripes--8, .stripes--8--holder { width: 464px; height: 464px; background-position: -661px -432px; }
+.stripes--9, .stripes--9--holder { width: 332px; height: 330px; background-position: 0 -556px; }
+.stripes--transbackground {
+	background-image: url(../img/colourful-building-credit-alex-ellison-blurred.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: fixed;
+}
+

@@ -34,7 +34,7 @@
 		</script>
 		<section class="about">
 			<article class="about--intro ui-panel">
-				<div class="ui-panel--content">
+				<div class="ui-panel--content ui-panel--stripes">
 					<h1>
 						<img class="logo" alt="Will Morgan" src="img/will-morgan-logo.png" />
 						Experienced web product developer
@@ -43,6 +43,17 @@
 					<p>I care about building products well, giving attention to detail all the way from prototyping to deployment.</p>
 					<p>I'm currently available for hire on a freelance / contract basis.</p>
 					<p><a class="cta" href="#hire">Get in touch.</a></p>
+				</div>
+				<div class="stripes">
+					<div class="stripes--1 stripes__sprite"></div>
+					<div class="stripes--2 stripes__sprite"></div>
+					<div class="stripes--3 stripes__sprite"></div>
+					<div class="stripes--4 stripes__sprite"></div>
+					<div class="stripes--5 stripes__sprite"></div>
+					<div class="stripes--transbackground stripes--6--holder"><div class="stripes--6 stripes__sprite"></div></div>
+					<div class="stripes--transbackground stripes--7--holder"><div class="stripes--7 stripes__sprite"></div></div>
+					<div class="stripes--transbackground stripes--8--holder"><div class="stripes--8 stripes__sprite"></div></div>
+					<div class="stripes--transbackground stripes--9--holder"><div class="stripes--9 stripes__sprite"></div></div>
 				</div>
 				<span class="ui-panel__credit">
 					Photo credit:
