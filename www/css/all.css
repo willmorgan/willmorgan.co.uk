@@ -264,30 +264,13 @@ figcaption {
 	}
 }
 
-.about .not-a-selfie {
-	display: block;
-	margin: 0 auto;
-	width: 40%;
-	border-radius: 50%;
-	box-shadow: 0 .1em .2em rgba(0,0,0,.85);
-}
-
 .about .logo {
 	display: block;
 	margin: 0 auto;
-	width: 40%;
-}
-
-@media screen and (min-width: 768px) {
-	.about .not-a-selfie {
-		width: 33.3%;
-	}
+	max-width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
-	.about .not-a-selfie {
-		width: 20%;
-	}
 
 	figcaption {
 		font-size: .6em;
