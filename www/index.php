@@ -42,7 +42,7 @@
 					<p>Hello. I'm Will, a senior PHP, JavaScript and CSS web developer based in London, UK.</p>
 					<p>I care about building products well, giving attention to detail all the way from prototyping to deployment.</p>
 					<p>I'm currently available for hire on a freelance / contract basis.</p>
-					<p><a class="cta" href="#hire">Get in touch.</a></p>
+					<p><a class="cta" href="#projects">View projects</a> <a class="cta" href="#hire">Get in touch</a></p>
 				</div>
 				<div class="stripes">
 					<div class="stripes--1 stripes__sprite"></div>
@@ -134,7 +134,7 @@
 				</span>
 			</article>
 		</section>
-		<section class="portfolio">
+		<section class="portfolio" id="projects">
 			<article class="portfolio--greggs ui-panel js-portfolio-container">
 				<div class="ui-panel--content">
 					<h3>Greggs</h3>
@@ -388,9 +388,8 @@
 			<article class="hire--intro ui-panel" id="hire">
 				<div class="ui-panel--content">
 					<h1>Would you like to work together?</h1>
-					<p>I'm interested in building things that make a positive difference to the world, especially if they're to do with music.</p>
-					<p>I can work in a variety of capacities - backend, frontend, or tech strategy.</p>
-					<p>I'm available for contracts from January 2015.</p>
+					<p>I'm interested in building things that make a positive difference to the world, especially if they're to do with music, or simply making interesting information more accessible to people.</p>
+					<p>I'm comfortable working in a variety of capacities - backend, frontend, or tech strategy.</p>
 					<p><a class="cta" href="mailto:jobs@willmorgan.co.uk">Let's talk.</a></p>
 					<p class="hire__cv">You can also <a target="_blank" href="/cv">grab a copy of my CV</a>, if you like.</p>
 				</div>
