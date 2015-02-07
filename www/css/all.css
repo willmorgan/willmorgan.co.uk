@@ -332,6 +332,10 @@ use the entire page height to cover.
 		background-attachment: fixed;
 	}
 
+	.stripes--transbackground {
+		background-size: cover;
+	}
+
 	/**
 	Can't wait for image-set / srcset support -_-
 	**/
