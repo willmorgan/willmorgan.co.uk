@@ -344,42 +344,6 @@ use the entire page height to cover.
 
 }
 
-.team {
-	font-size: .8em;
-	line-height: 1.6em;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-}
-
-.team > li {
-	display: block;
-	float: left;
-	width: 50%;
-	padding: .2em;
-	margin: 1em 0;
-}
-
-.team__role {
-	display: none;
-}
-
-@media screen and (min-width: 1280px) {
-	.team > li {
-		width: 33%;
-	}
-	.team > li:nth-child(3n+1) {
-		clear: left;
-	}
-	.team__role {
-		display: block;
-	}
-}
-
-.team > li a {
-	color: #fff;
-}
-
 .hire,
 .closing {
 	color: #ddddf2;
