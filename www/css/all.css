@@ -274,7 +274,8 @@ figcaption {
 .about .logo {
 	display: block;
 	margin: 0 auto 1em;
-	max-width: 100%;
+	width: 75%;
+	max-width: 332px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -452,6 +453,10 @@ use the entire page height to cover.
 }
 
 @media screen and (min-width: 768px) {
+
+	.about .logo {
+		margin-top: 1em;
+	}
 
 	.skills__buzzword {
 		width: 12.5%;
