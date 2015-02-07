@@ -216,27 +216,32 @@ figcaption {
 	.stripes--1 {
 		left: 50%;
 		top: 0;
+		z-index: 110;
 	}
 
 	.stripes--2 {
-		left: 25%;
+		left: 35%;
 		bottom: 30%;
+		z-index: 120;
 	}
 
 	.stripes--3 {
 		z-index: 200;
 		left: 5%;
 		bottom: 5%;
+		z-index: 130;
 	}
 
 	.stripes--4 {
 		left: 10%;
-		top: 30%;
+		bottom: 0;
+		z-index: 140;
 	}
 
 	.stripes--5 {
 		right: 10%;
 		top: 20%;
+		z-index: 150;
 	}
 
 	.stripes--6--holder {
@@ -252,11 +257,13 @@ figcaption {
 	.stripes--8--holder {
 		right: 0;
 		bottom: 0;
+		z-index: 105;
 	}
 
 	.stripes--9--holder {
-		left: 10%;
-		bottom: 10%;
+		left: 5%;
+		bottom: 25%;
+		z-index: 100;
 	}
 
 	.about--intro {
@@ -266,7 +273,7 @@ figcaption {
 
 .about .logo {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 1em;
 	max-width: 100%;
 }
 
