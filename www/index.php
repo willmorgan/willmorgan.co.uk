@@ -55,10 +55,6 @@
 					<div class="stripes--transbackground stripes--8--holder"><div class="stripes--8 stripes__sprite"></div></div>
 					<div class="stripes--transbackground stripes--9--holder"><div class="stripes--9 stripes__sprite"></div></div>
 				</div>
-				<span class="ui-panel__credit">
-					Photo credit:
-					<a rel="nofollow" target="_blank" href="http://www.flickr.com/photos/42276448@N07/9523358689/">Alex Ellison</a>
-				</span>
 			</article>
 			<article class="about--skills ui-panel ui-background-cover">
 				<div class="ui-panel--content">
