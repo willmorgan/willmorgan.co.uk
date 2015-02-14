@@ -416,9 +416,10 @@
 				<div class="ui-panel ui-panel--fluidheight">
 					<section>
 						<div class="footer__copyright">
-							<p>W Morgan Ltd. Company number 09330288, registered in England &amp; Wales</p>
 							<p>Copyright &copy; 2014 W Morgan Ltd</p>
-						</div>
+                            <p>Company 09330288 registered in England &amp; Wales; VAT number 202545839</p>
+                            <p>Registered office: 320 Garratt Lane, SW18 4EJ</p>
+                        </div>
 					</section>
 				</div>
 			</article>

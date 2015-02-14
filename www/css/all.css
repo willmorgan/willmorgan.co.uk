@@ -138,6 +138,8 @@ figcaption {
 .ui-panel--fluidheight {
 	min-height: 0;
 	line-height: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .ui-panel__credit {
@@ -424,8 +426,9 @@ use the entire page height to cover.
 }
 
 .footer__copyright {
-	font-size: 1em;
-	line-height: 1;
+	font-size: .75em;
+    padding: 0 1em;
+	line-height: 1.6;
 }
 
 .skills__buzzwords {
