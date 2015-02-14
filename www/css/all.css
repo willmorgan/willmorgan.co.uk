@@ -596,6 +596,14 @@ use the entire page height to cover.
 		margin: 0;
 	}
 
+        /**
+         * Notebook-proof 4:3 screenshots
+         */
+        .portfolio--lbf .portfolio__fullscreen > div,
+        .portfolio--greggs .portfolio__fullscreen > div {
+            max-width: 90vmin;
+        }
+
 	.state-portfolio--fullscreen .portfolio__fullscreen > div {
 		top: 50%;
 		opacity: 1;
