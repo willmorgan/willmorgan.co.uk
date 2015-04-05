@@ -41,7 +41,7 @@
 					 </h1>
 					<p>Hello. I'm Will, a senior PHP, JavaScript and CSS web developer based in London, UK.</p>
 					<p>I care about building products well, giving attention to detail all the way from prototyping to deployment.</p>
-					<p>I'm currently available for hire on a freelance / contract basis.</p>
+					<p>I will be available for hire on a contract basis from June 2015.</p>
 					<p><a class="cta" href="#projects">View projects</a> <a class="cta" href="#hire">Get in touch</a></p>
 				</div>
 				<div class="stripes">
