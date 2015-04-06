@@ -4,4 +4,4 @@ adddate() {
     done
 }
 
-git pull | adddate &>> /var/log/deploy.log
+git pull | adddate >> /var/log/deploy.log
