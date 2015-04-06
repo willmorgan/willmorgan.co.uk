@@ -39,6 +39,15 @@ if($givenSignature !== $expectedSig) {
 
 $json = json_decode($payload, true);
 
+// Only listen for master pushes
+if($json['ref'] !== 'refs/heads/master') {
+    print_r(array(
+        'message' => 'skipped',
+        'success' => false,
+    ));
+    return;
+}
+
 // Run the update
 $command = '../environment/scripts/deploy.sh';
 
