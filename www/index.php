@@ -42,7 +42,10 @@
 					<p>Hello. I'm Will, a senior PHP, JavaScript and CSS web developer based in London, UK.</p>
 					<p>I care about building products well, giving attention to detail all the way from prototyping to deployment.</p>
 					<p>I will be available for hire on a contract basis from June 2015.</p>
-					<p><a class="cta" href="#projects">View projects</a> <a class="cta" href="#hire">Get in touch</a></p>
+					<p>
+                        <a class="cta js-ga-event" data-ga-category="homepage-landing-projects" href="#projects">View projects</a>
+                        <a class="cta js-ga-event" data-ga-category="homepage-landing-contact" href="#hire">Get in touch</a>
+                    </p>
 				</div>
 				<div class="stripes">
 					<div class="stripes--1 stripes__sprite"></div>
@@ -390,8 +393,8 @@
 					<h1>Would you like to work together?</h1>
 					<p>I'm interested in building things that make a positive difference to the world, especially if they're to do with music, or simply making interesting information more accessible to people.</p>
 					<p>I'm comfortable working in a variety of capacities - backend, frontend, or tech strategy.</p>
-					<p><a class="cta" href="mailto:jobs@willmorgan.co.uk">Let's talk.</a></p>
-					<p class="hire__cv">You can also <a target="_blank" href="/cv">grab a copy of my CV</a>, if you like.</p>
+					<p><a class="cta js-ga-event" data-ga-category="hire-contact-cta" href="mailto:jobs@willmorgan.co.uk">Let's talk.</a></p>
+					<p class="hire__cv">You can also <a target="_blank" class="js-ga-event" data-ga-category="hire-cv-link" href="/cv">grab a copy of my CV</a>, if you like.</p>
 				</div>
 			</article>
 		</section>
@@ -402,10 +405,10 @@
 					<section class="closing__elsewhere">
 						<p>Elsewhere on the web:</p>
 						<ul>
-							<li><a href="https://github.com/willmorgan">GitHub</a></li>
-							<li><a href="https://twitter.com/willmorgan">Twitter</a></li>
-							<li><a href="https://medium.com/@willmorgan">Medium</a></li>
-							<li><a href="https://stackoverflow.com/users/127522/will-morgan">StackOverflow</a></li>
+							<li><a class="js-ga-event" data-ga-category="social-github" href="https://github.com/willmorgan">GitHub</a></li>
+							<li><a class="js-ga-event" data-ga-category="social-twitter" href="https://twitter.com/willmorgan">Twitter</a></li>
+							<li><a class="js-ga-event" data-ga-category="social-medium" href="https://medium.com/@willmorgan">Medium</a></li>
+							<li><a class="js-ga-event" data-ga-category="social-stackoverflow" href="https://stackoverflow.com/users/127522/will-morgan">StackOverflow</a></li>
 						</ul>
 					</section>
 				</div>

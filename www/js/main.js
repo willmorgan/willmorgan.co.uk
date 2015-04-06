@@ -3,7 +3,9 @@
  * Just some hand written JS to show I know more than jQuery...
  * Hey you just read this but this is crazy, but if you like it, then hire me maybe?
  */
+/* global ga, Blazy, FastClick */
 (function() {
+    'use strict';
 	var DOMTools = {
 		/**
 		 * @param string selector (like .der-really-cool-klass-ja)
@@ -39,7 +41,6 @@
 		 * @return boolean
 		 */
 		matches: function(selector, element) {
-			var matches, i;
 			if('matches' in element) {
 				return element.matches(selector);
 			}
@@ -108,28 +109,48 @@
 			var fragment = document.createElement('div');
 			fragment.innerHTML = html;
 			return fragment.firstChild;
-		},
+		}
 	};
+    /**
+     * Analytics tracking
+     */
+    var trackEvent = function(eventType, category, label, value) {
+        ga('send', 'event', category, eventType, label, value);
+        console.log('trackEvent', [].slice.call(arguments));
+    };
+    DOMTools.delegate(
+        '.js-ga-event',
+        'click',
+        function(event, element) {
+            var category = element.getAttribute('data-ga-category');
+            var label = element.getAttribute('data-ga-label') || '';
+            var value = element.getAttribute('data-ga-value') || '';
+            trackEvent(event.type, category, label, value);
+        }
+    );
 	/**
 	 * Enlarge the portfolio item, or something.
 	 */
 	var triggerPortfolioFullscreen = function(event, currentNode) {
+        ++triggerPortfolioFullscreen.invokeCount;
 		var figure = DOMTools.findOne('figure', currentNode);
 		var image = DOMTools.findOne('img', figure);
 		var container = DOMTools.closest('.js-portfolio-container', currentNode);
 		var frame = DOMTools.findOne('.js-portfolio-fullscreen', container);
 		var target = DOMTools.findOne('.js-portfolio-fullscreen-target', frame);
-		var large = DOMTools.createFromHTML('<img src="'+image.getAttribute('data-large')+'" class="img--large" />')
+		var large = DOMTools.createFromHTML('<img src="'+image.getAttribute('data-large')+'" class="img--large" />');
 		target.innerHTML = figure.outerHTML;
 		var targetImage = DOMTools.findOne('img', target);
 		large.onload = function() {
 			this.classList.add('b-loaded');
-		}
+		};
 		targetImage.parentNode.insertBefore(large, targetImage.nextSibling);
 
 		target.offsetHeight;
 		container.classList.add('state-portfolio--fullscreen');
+        trackEvent('click', 'portfolio-screenshot', image.getAttribute('alt'), triggerPortfolioFullscreen.invokeCount);
 	};
+    triggerPortfolioFullscreen.invokeCount = 0;
 	/**
 	 * Hide the portfolio item
 	 */
