@@ -36,7 +36,7 @@
 			<article class="about--intro ui-panel">
 				<div class="ui-panel--content ui-panel--stripes">
 					<h1>
-						<img class="logo" alt="Will Morgan" src="img/will-morgan-logo.png" />
+						<img class="logo" alt="Will Morgan" src="img/will-morgan-logo.svg" />
 						Experienced web product developer
 					 </h1>
 					<p>Hello. I'm Will, a senior PHP, JavaScript and CSS web developer based in London, UK.</p>
