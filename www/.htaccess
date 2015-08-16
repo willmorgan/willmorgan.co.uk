@@ -8,7 +8,10 @@ FileETag None
 RewriteEngine on
 RewriteRule ^cv/?$ https://docs.google.com/document/d/1cXZjQi9ESDVKs3lqAtWbvsepLz-HLDPao3I9PsYGryc/edit [R=302]
 # Revision minified JS/CSS
-RewriteRule ^(js|css)/_combined-[\@a-z0-9\.]+.(js|css)$ $1/_combined.$1 [L]
+RewriteRule ^(js|css)/_combined-[\@a-z0-9\.]+.(js|css)$ dist/$1/_combined.$1 [L]
+# Dist directory
+RewriteCond %{ENV:DEPLOY_ENVIRONMENT} !="dev"
+RewriteRule ^index.html dist/index.html [L]
 </IfModule>
 
 <IfModule mod_expires.c>
