@@ -1,7 +1,7 @@
 willmorgan.co.uk
 ================
 
-version: 0.9.3
+version: 1.0.0
 
 My personal / freelancer promotion website.
 
@@ -10,3 +10,4 @@ My personal / freelancer promotion website.
 * Ensure Apache is restarted through `apache2ctl stop && apache2ctl start` in order to pick up new variable assignments.
 
 **GITHUB_DEPLOY_SECRET**    Used for verifying webhooks from GitHub
+**DEPLOY_ENVIRONMENT**      What environment we're running on. Set to "dev" for development, otherwise, a production environment is assumed.
