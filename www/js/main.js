@@ -214,6 +214,20 @@
 		selector: '.portfolio__screens img'
 	});
 
+	/**
+	 * Smooth scrolling
+	 */
+	DOMTools.delegate('.js-smoothscroll', 'click', function(ev, element) {
+		if (!element.scrollIntoView) {
+			return;
+		}
+		document.getElementById(element.href.split('#').pop()).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+		ev.preventDefault();
+	});
+
 	FastClick.attach(document.body);
 
 }());
