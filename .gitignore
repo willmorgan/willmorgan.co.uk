@@ -4,4 +4,7 @@
 .vagrant
 *.sublime-*
 .idea
+*.log
+.DS_Store
+*.iml
 node_modules/
