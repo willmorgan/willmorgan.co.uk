@@ -1,6 +1,11 @@
 {
   "name": "willmorgan.co.uk",
   "private": true,
+  "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js",
+    "watch": "./node_modules/gulp/bin/gulp.js watch",
+    "build": "./node_modules/gulp/bin/gulp.js build"
+  },
   "devDependencies": {
     "git-rev": "^0.2.1",
     "gulp": "3.8.*",
