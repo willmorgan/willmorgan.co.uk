@@ -1,7 +1,7 @@
 willmorgan.co.uk
 ================
 
-version: 1.0.0
+version: 1.1.0
 
 My personal / freelancer promotion website.
 
