@@ -756,12 +756,6 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 **/
 @media screen and (max-width: 1024px) {
 
-	.portfolio__screens .ui-backdrop,
-	.portfolio__fullscreen {
-		background: inherit;
-		padding: inherit;
-	}
-
 	/** Stop jumping content when images load **/
 	.js .portfolio__screens figcaption {
 		position: absolute;
@@ -778,6 +772,14 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 		line-height: 1;
 	}
 
+}
+
+@media screen and (max-width: 1280px) {
+	.portfolio__screens .ui-backdrop,
+	.portfolio__fullscreen {
+		background: inherit;
+		padding: inherit;
+	}
 }
 
 @media screen and (min-width: 1280px) {
