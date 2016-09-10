@@ -184,7 +184,7 @@ figcaption {
 }
 
 .ui-backdrop {
-	background: rgba(0,0,0,.65);
+	background: rgba(0,0,0,.35);
 	padding: .2em .4em;
 }
 
