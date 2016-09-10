@@ -224,7 +224,6 @@ figcaption {
 }
 
 .stripes--3 {
-	z-index: 200;
 	left: 5%;
 	bottom: 5%;
 	z-index: 130;
@@ -804,7 +803,7 @@ Excluding this rule for any resolution over 1024 because it's kind of fiddly
 	.skills__buzzword .devicons:focus + .tooltip {
 		opacity: 1;
 		bottom: -1.5em;
-		transition-duration: opacity .15s, bottom .25s;
+		transition: opacity .15s, bottom .25s;
 	}
 
 	.portfolio__screens figcaption {
