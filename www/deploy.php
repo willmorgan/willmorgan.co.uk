@@ -43,7 +43,6 @@ $json = json_decode($payload, true);
 if($json['ref'] !== 'refs/heads/master') {
     print_r(array(
         'message' => 'skipped',
-        'success' => false,
     ));
     return;
 }
@@ -51,7 +50,20 @@ if($json['ref'] !== 'refs/heads/master') {
 // Run the update
 $command = '../environment/scripts/deploy.sh';
 
+exec($command, $output, $exitCode);
+
+if ($exitCode !== 0) {
+    header('HTTP/1.0 500 Bad Exit Code');
+    print_r(array(
+        'message' => 'error',
+        'code' => $exitCode,
+        'output' => $output,
+    ));
+    return;
+}
+
 print_r(array(
 	'message' => 'ok',
-	'success' => shell_exec($command) !== null,
+	'code' => $exitCode,
+    'output' => $output,
 ));
