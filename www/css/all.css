@@ -401,10 +401,6 @@ use the entire page height to cover.
 	list-style: none;
 }
 
-.technologies li {
-	display: inline-block;
-}
-
 .roles ~ .portfolio__info,
 .portfolio__fullscreen,
 .portfolio__screens {
