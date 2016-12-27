@@ -2,22 +2,20 @@
   "name": "willmorgan.co.uk",
   "private": true,
   "scripts": {
-    "gulp": "./node_modules/gulp/bin/gulp.js",
-    "watch": "./node_modules/gulp/bin/gulp.js watch",
-    "build": "./node_modules/gulp/bin/gulp.js build"
+    "serve": "./node_modules/.bin/http-server build/",
+    "watch": "NODE_ENV=development ./node_modules/.bin/webpack -w",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack -p"
   },
   "devDependencies": {
-    "git-rev": "^0.2.1",
-    "gulp": "3.8.*",
-    "gulp-autoprefixer": "2.0.*",
-    "gulp-concat": "2.4.*",
-    "gulp-html-replace": "^1.4.4",
-    "gulp-htmlmin": "^1.1.1",
-    "gulp-imagemin": "2.1.*",
-    "gulp-minify-css": "0.3.*",
-    "gulp-rev-append": "0.1.*",
-    "gulp-uglify": "1.0.*",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "http-server": "^0.9.0",
     "imagemin-pngquant": "*",
-    "install": "^0.1.8"
+    "imagemin-webpack-plugin": "^1.4.4",
+    "webpack": "^1.14.0",
+    "webpack-livereload-plugin": "^0.9.0"
   }
 }

@@ -1,11 +1,16 @@
-/**
- * Copyleft Will Morgan
- * Just some hand written JS to show I know more than jQuery...
- * Hey you just read this but this is crazy, but if you like it, then hire me maybe?
- */
+'use strict';
+
+var Blazy = require('./blazy.min');
+var FastClick = require('./fastclick-1.0.3');
+
+require('../css/normalize.css');
+require('../css/all.css');
+require('../css/devicons.css');
+require('../css/stripes.css');
+require('../css/spinner.css');
+
 /* global ga, Blazy, FastClick */
 (function() {
-    'use strict';
 	var DOMTools = {
 		/**
 		 * @param string selector (like .der-really-cool-klass-ja)
@@ -210,7 +215,7 @@
 		panel.setAttribute('data-src', panel.style.backgroundImage);
 	}
 
-	var blazy = new Blazy({
+	new Blazy({
 		selector: '.portfolio__screens img'
 	});
 
