@@ -8,10 +8,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const SRC_DIR = resolve(__dirname, 'src');
+const BUILD_DIR = resolve(__dirname, 'build');
+
 module.exports = {
-    entry: resolve(__dirname, 'www', 'js', 'main.js'),
+    entry: resolve(SRC_DIR, 'js', 'main.js'),
     output: {
-        path: resolve(__dirname, 'build'),
+        path: BUILD_DIR,
         filename: 'bundle.js',
     },
     module: {
@@ -31,8 +34,8 @@ module.exports = {
         new ExtractTextPlugin('styles.css'),
         new CopyWebpackPlugin([
             {
-                from: resolve(__dirname, 'www', 'img'),
-                to: resolve(__dirname, 'build', 'img'),
+                from: resolve(SRC_DIR, 'img'),
+                to: resolve(BUILD_DIR, 'img'),
             }
         ]),
         new ImageminPlugin({
@@ -45,8 +48,8 @@ module.exports = {
 
         }),
         new HtmlWebpackPlugin({
-            template: resolve(__dirname, 'www', 'index.html'),
-            favicon: resolve(__dirname, 'www', 'favicon.ico'),
+            template: resolve(SRC_DIR, 'index.html'),
+            favicon: resolve(SRC_DIR, 'favicon.ico'),
             minify: {
                 collapseWhitespace: true,
                 removeAttributeQuotes: true,
