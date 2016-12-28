@@ -25,7 +25,7 @@ module.exports = {
             },
             {
                 test: /.(jpe?g|png|svg|ttf|eot|woff)(\?.+)?$/,
-                loader: 'file?context=www/&name=[path][name].[ext]',
+                loader: 'file?context='+SRC_DIR+'/&name=[path][name].[ext]',
             }
         ]
     },
