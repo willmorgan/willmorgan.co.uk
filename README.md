@@ -5,6 +5,8 @@ version: 1.4
 
 My personal / freelancer promotion website.
 
+[![Build Status](https://travis-ci.org/willmorgan/willmorgan.co.uk.svg?branch=master)](https://travis-ci.org/willmorgan/willmorgan.co.uk)
+
 ## AWS Static Hosting Setup
 
 For my benefit, so I don't forget...
@@ -64,7 +66,7 @@ For my benefit, so I don't forget...
    </CORSConfiguration>
    ````
    
-   7. `npm run build`, then upload the build dir (to be automated!)
+   7. See `.travis.yml` for auto deployment to S3, triggered by pushes to GitHub. In summary, this runs `npm run build` and then pushes to S3.
    
 ### SSL Certificates
 
