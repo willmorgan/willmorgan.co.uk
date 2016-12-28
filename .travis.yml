@@ -4,9 +4,9 @@ node_js:
 script: npm run build
 deploy:
   provider: s3
-  region: us-east-1
+  region: eu-west-2
   acl: public_read
-  bucket: travis.willmorgan.co.uk
+  bucket: willmorgan.co.uk
   local_dir: build
   detect_encoding: true
   access_key_id:
