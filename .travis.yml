@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '6'
+script: npm run build
+deploy:
+  provider: s3
+  region: us-east-1
+  acl: public_read
+  bucket: travis.willmorgan.co.uk
+  local_dir: build
+  detect_encoding: true
+  access_key_id:
+    secure: rdNNmelPZvOx5BT2oY+aokV8Qpv/5axIQegVfjnQDm0orQFA2MqPY8fHZhlBlpXblD5z0u8l5mdYpAu0bVm+dhTHMfknuNrSFjonMFlfVwiRRr3PLrayZDTdhGMuGl1koXCqrk7jsxUl+qFwkyjhx2MUz66ckogfq4AtD4yhI4A=
+  secret_access_key:
+    secure: jVU+G99fGUQfw2+eFSUT2KJlOR0giY/lwWxljEnQZzLlraaEBM9cjKd2zNUsYTTgiR5lKhrfcbCGRWfZz+g4nh9QoWK99FN9SW91+3EZ3b5e538kwNIW5jc+z0zbh9MNIwrGKqcw4TKmZEw7I1wHvGFkrX4itGA/kSSvp24BEkc=
+  skip_cleanup: true
