@@ -14,3 +14,7 @@ deploy:
   secret_access_key:
     secure: jVU+G99fGUQfw2+eFSUT2KJlOR0giY/lwWxljEnQZzLlraaEBM9cjKd2zNUsYTTgiR5lKhrfcbCGRWfZz+g4nh9QoWK99FN9SW91+3EZ3b5e538kwNIW5jc+z0zbh9MNIwrGKqcw4TKmZEw7I1wHvGFkrX4itGA/kSSvp24BEkc=
   skip_cleanup: true
+cache:
+  bundler: true
+  directories:
+    - node_modules
