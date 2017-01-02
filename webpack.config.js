@@ -50,6 +50,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: resolve(SRC_DIR, 'index.html'),
             favicon: resolve(SRC_DIR, 'favicon.ico'),
+            hash: 'version', // awaiting PR merge: https://github.com/ampedandwired/html-webpack-plugin/pull/535
             minify: {
                 collapseWhitespace: true,
                 removeAttributeQuotes: true,
